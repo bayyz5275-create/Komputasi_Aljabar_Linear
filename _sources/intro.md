@@ -1,10 +1,10 @@
-# Welcome 
+# Welcome My Note
 # Nama Saya :Ahmad Subaidi
-# Nim : 250411100024
+# Nim       : 250411100024
 
 Berikut ialah Semua Materi Komputasi Aljabar Linear Yang Saya Pelajari .
 Perkenalkan Nama : Ahmad Subaidi
-tanggal lahir : 1106-Juli-2007
+tanggal lahir : 10-Juli-2007
 Asal Kota : Sumenep 
 ini Documentasi Untuk Mata Kuliah KAL [the Jupyter Book documentation](https://jupyterbook.org)
 
