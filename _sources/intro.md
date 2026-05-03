@@ -1,11 +1,18 @@
-# Welcome to your Jupyter Book
+# Welcome 
+# Nama Saya :Ahmad Subaidi
+# Nim : 250411100024
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Berikut ialah Semua Materi Komputasi Aljabar Linear Yang Saya Pelajari .
+Perkenalkan Nama : Ahmad Subaidi
+tanggal lahir : 1106-Juli-2007
+Asal Kota : Sumenep 
+ini Documentasi Untuk Mata Kuliah KAL [the Jupyter Book documentation](https://jupyterbook.org)
 
 Check out the content pages bundled with this sample book to see more.
 
 ```{tableofcontents}
 ```
+
+Pelanggar Hak Cipta aakan Tetap Berlaku!!!
+
+
