@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome My Note &#8212; My sample book</title>
+    <title>Transformasi Matriks &#8212; My sample book</title>
   
   
   
@@ -60,12 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'TransformasiMatriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi Pertemuan 1" href="Materi1.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Evaluasi Determinan Dan Invers" href="EvaluasiDE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,19 +162,19 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome My Note
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Materi1.html">Materi Pertemuan 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugasuts.html">Tugas Ulangan Tengah Semester</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugasgauss.html">Tugas Eliminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SoalDeterminan.html">Soal Evaluasi Determinan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EvaluasiDE.html">Evaluasi Determinan Dan Invers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Transformasi Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -255,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTransformasiMatriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +282,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/TransformasiMatriks.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +358,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome My Note</h1>
+    <h1>Transformasi Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -371,11 +368,21 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome My Note</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nama-saya-ahmad-subaidi">Nama Saya :Ahmad Subaidi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nim-250411100024">Nim       : 250411100024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-data">Representasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-pergeseran">Translasi (Pergeseran)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-dalam-matriks">Translasi dalam Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">Refleksi terhadap Sumbu Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-dalam-matriks">Refleksi dalam Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-gabungan">Transformasi Gabungan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-animasi-loop">Proses Animasi (Loop)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kenapa-objek-dan-bayangan-sejajar">Kenapa Objek dan Bayangan Sejajar ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-animasi">Sistem Animasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi">Visualisasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alur-program">Alur Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulannya-ialah">Kesimpulannya ialah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ilustrasi-sederhana">Ilustrasi Sederhana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-google-collabnya">Link Google Collabnya</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -386,32 +393,213 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-my-note">
-<h1>Welcome My Note<a class="headerlink" href="#welcome-my-note" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nama-saya-ahmad-subaidi">
-<h1>Nama Saya :Ahmad Subaidi<a class="headerlink" href="#nama-saya-ahmad-subaidi" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nim-250411100024">
-<h1>Nim       : 250411100024<a class="headerlink" href="#nim-250411100024" title="Link to this heading">#</a></h1>
-<p>Berikut ialah Semua Materi Komputasi Aljabar Linear Yang Saya Pelajari .
-Perkenalkan Nama : Ahmad Subaidi
-tanggal lahir : 10-Juli-2007
-Asal Kota : Sumenep
-ini Documentasi Untuk Mata Kuliah KAL <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Materi1.html">Materi Pertemuan 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugasuts.html">Tugas Ulangan Tengah Semester</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugasgauss.html">Tugas Eliminasi Gaussan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SoalDeterminan.html">Soal Evaluasi Determinan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="EvaluasiDE.html">Evaluasi Determinan Dan Invers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="transformasi-matriks">
+<h1>Transformasi Matriks<a class="headerlink" href="#transformasi-matriks" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="representasi-data">
+<h2>Representasi Data<a class="headerlink" href="#representasi-data" title="Link to this heading">#</a></h2>
+<p>Titik objek disimpan dalam bentuk koordinat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>Pelanggar Hak Cipta aakan Tetap Berlaku!!!</p>
+<p>Contoh:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">B</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">C</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Titik-titik tersebut membentuk sebuah persegi.</p>
+</section>
+<hr class="docutils" />
+<section id="translasi-pergeseran">
+<h2>Translasi (Pergeseran)<a class="headerlink" href="#translasi-pergeseran" title="Link to this heading">#</a></h2>
+<p>Rumus yang digunakan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (x + dx, y)
+</pre></div>
+</div>
+<p>Pada program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dx</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Maksudnya setiap langkah, objek bergeser 1 satuan ke kanan.
+Maksudnya:</p>
+<ul class="simple">
+<li><p>x berubah → objek bergerak horizontal</p></li>
+<li><p>y tetap → tidak ada perubahan vertikal</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="translasi-dalam-matriks">
+<h2>Translasi dalam Matriks<a class="headerlink" href="#translasi-dalam-matriks" title="Link to this heading">#</a></h2>
+<p>Dalam bentuk matriks homogen:</p>
+<p>[
+T =
+\begin{bmatrix}
+1 &amp; 0 &amp; 1 <br />
+0 &amp; 1 &amp; 0 <br />
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+]</p>
+<p>Dengan:</p>
+<p>[
+P =
+\begin{bmatrix}
+x <br />
+y <br />
+1
+\end{bmatrix}
+]</p>
+<p>Maka:</p>
+<p>[
+P’ = T \cdot P
+]</p>
+<p>Dan Ini Akan Menghasilkan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (x+1, y)
+</pre></div>
+</div>
+<p>Rumus di program dari bentuk matriks ini.</p>
+</section>
+<hr class="docutils" />
+<section id="refleksi-terhadap-sumbu-y">
+<h2>Refleksi terhadap Sumbu Y<a class="headerlink" href="#refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h2>
+<p>Rumus refleksi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (-x, y)
+</pre></div>
+</div>
+<p>Maksudnya itu:</p>
+<ul class="simple">
+<li><p>Posisi x dibalik (kanan ↔ kiri)</p></li>
+<li><p>y tetap</p></li>
+</ul>
+<p>Contoh:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(4,2) → (-4,2)
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="refleksi-dalam-matriks">
+<h2>Refleksi dalam Matriks<a class="headerlink" href="#refleksi-dalam-matriks" title="Link to this heading">#</a></h2>
+<p>[
+R =
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 <br />
+0 &amp; 1 &amp; 0 <br />
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+]</p>
+<p>Transformasi:</p>
+<p>[
+P’ = R \cdot P
+]</p>
+<p>Hasilnya Akan sama:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (-x, y)
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="transformasi-gabungan">
+<h2>Transformasi Gabungan<a class="headerlink" href="#transformasi-gabungan" title="Link to this heading">#</a></h2>
+<p>Urutan transformasi pada program:</p>
+<ol class="arabic simple">
+<li><p>Translasi</p></li>
+<li><p>Refleksi</p></li>
+</ol>
+<p>Sehingga:</p>
+<p>[
+P’ = R \cdot T \cdot P
+]</p>
+<p>Artinya:</p>
+<ul class="simple">
+<li><p>Titik digeser terlebih dahulu</p></li>
+<li><p>Kemudian dicerminkan</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="proses-animasi-loop">
+<h2>Proses Animasi (Loop)<a class="headerlink" href="#proses-animasi-loop" title="Link to this heading">#</a></h2>
+<p>Setiap langkah dalam program:</p>
+<ol class="arabic simple">
+<li><p>Objek ditranslasi (geser ke kanan)</p></li>
+<li><p>Hasilnya langsung direfleksikan</p></li>
+<li><p>Kedua hasil ditampilkan</p></li>
+</ol>
+<p>Proses diulang beberapa kali Agar Berbentuk animasi.</p>
+</section>
+<hr class="docutils" />
+<section id="kenapa-objek-dan-bayangan-sejajar">
+<h2>Kenapa Objek dan Bayangan Sejajar ?<a class="headerlink" href="#kenapa-objek-dan-bayangan-sejajar" title="Link to this heading">#</a></h2>
+<p>Karena hubungan titiknya:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x_bayangan</span> <span class="o">=</span> <span class="o">-</span><span class="n">x_objek</span>
+<span class="n">y_bayangan</span> <span class="o">=</span> <span class="n">y_objek</span>
+</pre></div>
+</div>
+<p>Akibatnya:</p>
+<ul class="simple">
+<li><p>Jarak ke sumbu Y sama</p></li>
+<li><p>Posisi berlawanan arah</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="sistem-animasi">
+<h2>Sistem Animasi<a class="headerlink" href="#sistem-animasi" title="Link to this heading">#</a></h2>
+<p>Program menggunakan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">matplotlib</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">FuncAnimation</span>
+</pre></div>
+</div>
+<p>Fungsi ini akan:</p>
+<ul class="simple">
+<li><p>Menjalankan frame secara berulang</p></li>
+<li><p>Memperbarui tampilan setiap langkah</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="visualisasi">
+<h2>Visualisasi<a class="headerlink" href="#visualisasi" title="Link to this heading">#</a></h2>
+<p>Setiap frame menampilkan:</p>
+<ul class="simple">
+<li><p>Objek (biru)</p></li>
+<li><p>Bayangan (merah)</p></li>
+<li><p>Grid koordinat</p></li>
+<li><p>Sumbu X dan Y</p></li>
+<li><p>Label titik</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="alur-program">
+<h2>Alur Program<a class="headerlink" href="#alur-program" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Objek awal
+   ↓
+Translasi
+   ↓
+Refleksi
+   ↓
+Tampilkan
+   ↓
+Ulangi
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="kesimpulannya-ialah">
+<h2>Kesimpulannya ialah<a class="headerlink" href="#kesimpulannya-ialah" title="Link to this heading">#</a></h2>
+<p>Program menggunakan dua transformasi: translasi dan refleksi.
+Transformasi bisa ditulis dalam bentuk matriks.
+Implementasi di kode menggunakan rumus langsung.
+Hasil animasi menunjukkan hubungan objek dan bayangannya secara jelas</p>
+</section>
+<hr class="docutils" />
+<section id="ilustrasi-sederhana">
+<h2>Ilustrasi Sederhana<a class="headerlink" href="#ilustrasi-sederhana" title="Link to this heading">#</a></h2>
+<p>Seperti berdiri di depan cermin:</p>
+<ul class="simple">
+<li><p>Kamu bergerak ke kanan</p></li>
+<li><p>Bayangan bergerak ke kiri</p></li>
+<li><p>Posisi tetap sejajar</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="link-google-collabnya">
+<h2>Link Google Collabnya<a class="headerlink" href="#link-google-collabnya" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1myENYF1s8OEZET6SuhJC9VYk1ycXmKEK?usp=sharing">https://colab.research.google.com/drive/1myENYF1s8OEZET6SuhJC9VYk1ycXmKEK?usp=sharing</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -444,12 +632,21 @@ ini Documentasi Untuk Mata Kuliah KAL <a class="reference external" href="https:
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="EvaluasiDE.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Evaluasi Determinan Dan Invers</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="Materi1.html"
+       href="markdown-notebooks.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi Pertemuan 1</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -471,11 +668,21 @@ ini Documentasi Untuk Mata Kuliah KAL <a class="reference external" href="https:
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome My Note</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nama-saya-ahmad-subaidi">Nama Saya :Ahmad Subaidi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nim-250411100024">Nim       : 250411100024</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-data">Representasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-pergeseran">Translasi (Pergeseran)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-dalam-matriks">Translasi dalam Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">Refleksi terhadap Sumbu Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-dalam-matriks">Refleksi dalam Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-gabungan">Transformasi Gabungan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-animasi-loop">Proses Animasi (Loop)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kenapa-objek-dan-bayangan-sejajar">Kenapa Objek dan Bayangan Sejajar ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-animasi">Sistem Animasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi">Visualisasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alur-program">Alur Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulannya-ialah">Kesimpulannya ialah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ilustrasi-sederhana">Ilustrasi Sederhana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-google-collabnya">Link Google Collabnya</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
