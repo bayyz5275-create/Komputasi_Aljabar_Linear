@@ -1,124 +1,190 @@
-# Transformasi 
-Program: Transformasi Refleksi Dinamis
-Deskripsi:
-- Menampilkan objek (kotak) di Kuadran 1
-- Menampilkan bayangan hasil refleksi di Kuadran 2
-- Objek dapat digeser dengan mouse (drag)
-- Bayangan mengikuti secara real-time
-- Sumbu refleksi bersifat dinamis (berubah sesuai posisi objek)
-"""
+# Animasi Transformasi Geometri: Translasi & Refleksi
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.path import Path
+## 📌 Deskripsi Program
 
-# DATA AWAL OBJEK (KOTAK)
-points = np.array([
-    [2, 2],
-    [4, 2],
-    [4, 4],
-    [2, 4]
-])
+Program ini dibuat menggunakan Python untuk menampilkan animasi transformasi geometri berupa:
 
-# Variabel kontrol drag
-dragging = False
-start_mouse = None
-start_points = None
+* **Translasi (pergeseran)**
+* **Refleksi terhadap sumbu Y (pencerminan)**
 
+Objek utama berupa **persegi** yang bergerak ke kanan, dan bayangannya selalu muncul secara **simetris di sisi kiri**, seperti efek cermin.
 
-# FUNGSI REFLEKSI DINAMIS
-def reflect_dynamic(points):
-    """
-    Melakukan refleksi terhadap garis vertikal x = a
-    dimana a berubah sesuai posisi objek
-    """
-    a = np.mean(points[:,0]) - 2.5  # sumbu dinamis
+---
 
-    reflected = points.copy()
-    reflected[:,0] = 2*a - points[:,0]
+## 🔢 Representasi Data
 
-    return reflected, a
+Titik-titik objek disimpan dalam bentuk pasangan koordinat:
 
+```
+( x, y )
+```
 
+Contoh:
 
-# CEK KLIK DI DALAM OBJEK
+```
+A(1,1), B(3,1), C(3,3), D(1,3)
+```
 
-def is_inside(x, y, polygon):
-    return Path(polygon).contains_point((x, y))
+Semua titik ini membentuk sebuah persegi.
 
+---
 
+## ➡️ Translasi (Pergeseran)
 
-# FUNGSI GAMBAR
+Fungsi translasi pada program:
 
-def draw():
-    plt.cla()
+```
+(x, y) → (x + dx, y)
+```
 
-    # Gambar objek asli
-    p = np.vstack([points, points[0]])
-    plt.plot(p[:,0], p[:,1], marker='o', label="Asli (Q1)")
+Penjelasan:
 
-    # Gambar bayangan
-    rp, axis = reflect_dynamic(points)
-    rp = np.vstack([rp, rp[0]])
-    plt.plot(rp[:,0], rp[:,1], marker='o', label="Cermin (Q2)")
+* Nilai **x bertambah** → objek bergerak ke kanan
+* Nilai **y tetap** → tidak naik atau turun
 
-    # Gambar sumbu refleksi
-    plt.axvline(axis, linestyle='--', label="Sumbu Dinamis")
+Pada program:
 
-    # Garis sumbu koordinat
-    plt.axhline(0)
-    plt.axvline(0)
+```
+dx = 1
+```
 
-    plt.grid()
-    plt.legend()
-    plt.xlim(-10, 10)
-    plt.ylim(-10, 10)
-    plt.title("Transformasi Refleksi Dinamis (Drag dengan Mouse)")
+Artinya setiap langkah, objek bergeser 1 satuan ke kanan.
 
+---
 
+## 🪞 Refleksi terhadap Sumbu Y
 
-# EVENT MOUSE
+Fungsi refleksi:
 
-def on_click(event):
-    global dragging, start_mouse, start_points
+```
+(x, y) → (-x, y)
+```
 
-    if event.inaxes and is_inside(event.xdata, event.ydata, points):
-        dragging = True
-        start_mouse = np.array([event.xdata, event.ydata])
-        start_points = points.copy()
+Penjelasan:
 
+* Posisi x dibalik (kanan ↔ kiri)
+* Jarak terhadap sumbu Y tetap sama
 
-def on_release(event):
-    global dragging
-    dragging = False
+Contoh:
 
+```
+(4,2) → (-4,2)
+```
 
-def on_motion(event):
-    global points
+Ini membuat objek terlihat seperti bayangan di cermin.
 
-    if dragging and event.inaxes:
-        delta = np.array([event.xdata, event.ydata]) - start_mouse
+---
 
-        new_points = start_points + delta
+## 🔁 Proses Perulangan (Animasi)
 
-        # Batasi agar tetap di Kuadran 1
-        new_points[:,0] = np.maximum(new_points[:,0], 0.1)
-        new_points[:,1] = np.maximum(new_points[:,1], 0.1)
+Program menggunakan perulangan untuk membuat animasi:
 
-        points[:] = new_points
+### Setiap langkah:
 
-        draw()
-        plt.draw()
+1. Objek digeser ke kanan (translasi)
+2. Bayangan dibuat dari posisi terbaru (refleksi)
 
+Urutan ini sangat penting karena:
 
+* Bayangan harus selalu mengikuti objek
+* Agar terlihat seperti cermin nyata
 
-# MAIN PROGRAM
+---
 
-fig = plt.figure()
-draw()
+## 🧠 Kenapa Objek & Bayangan Selalu Sejajar?
 
-fig.canvas.mpl_connect('button_press_event', on_click)
-fig.canvas.mpl_connect('button_release_event', on_release)
-fig.canvas.mpl_connect('motion_notify_event', on_motion)
+Karena setiap titik memenuhi hubungan:
 
-plt.show()
+```
+x_bayangan = -x_objek
+y_bayangan = y_objek
+```
+
+Artinya:
+
+* Jarak ke sumbu Y sama
+* Posisi saling berlawanan
+
+Hasilnya:
+
+* Objek dan bayangan selalu **simetris**
+* Terlihat **sejajar kiri-kanan**
+
+---
+
+## 🎬 Sistem Animasi
+
+Animasi dibuat menggunakan:
+
+```
+matplotlib.animation.FuncAnimation
+```
+
+Fungsi ini:
+
+* Menjalankan frame secara berulang
+* Memanggil fungsi `update()` setiap langkah
+* Menampilkan perubahan posisi objek
+
+---
+
+## 🎨 Proses Visualisasi
+
+Setiap frame akan menampilkan:
+
+* 🔵 Objek asli (warna biru)
+* 🔴 Bayangan/cermin (warna merah)
+* Grid koordinat
+* Sumbu X dan Y
+* Label titik (A, B, C, D)
+
+---
+
+## ⚙️ Alur Logika Program
+
+Secara sederhana:
+
+```
+Objek awal
+   ↓
+Translasi (geser kanan)
+   ↓
+Refleksi (buat bayangan)
+   ↓
+Tampilkan hasil
+   ↓
+Ulangi
+```
+
+---
+
+## 🎯 Kesimpulan
+
+* Translasi mengubah posisi objek
+* Refleksi membuat bayangan simetris
+* Urutan transformasi menentukan hasil
+* Animasi menunjukkan proses secara bertahap
+
+---
+
+## 💡 Ilustrasi Sederhana
+
+Bayangkan kamu berdiri di depan cermin:
+
+* Kamu bergerak ke kanan
+* Bayangan kamu bergerak ke kiri
+* Posisi tetap sejajar
+
+Program ini bekerja dengan cara yang sama 😊
+
+---
+
+## 🛠️ Teknologi
+
+* Python
+* Matplotlib
+* Numpy
+
+---
+### Berikut ialah Link Google Colaab nya
+https://colab.research.google.com/drive/1myENYF1s8OEZET6SuhJC9VYk1ycXmKEK?usp=sharing

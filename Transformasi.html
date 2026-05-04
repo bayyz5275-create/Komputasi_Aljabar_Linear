@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Transformasi &#8212; My sample book</title>
+    <title>Animasi Transformasi Geometri: Translasi &amp; Refleksi &#8212; My sample book</title>
   
   
   
@@ -174,14 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Tugasgauss.html">Tugas Eliminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SoalDeterminan.html">Soal Evaluasi Determinan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EvaluasiDE.html">Evaluasi Determinan Dan Invers</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Transformasi</a></li>
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Animasi Transformasi Geometri: Translasi &amp; Refleksi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -365,7 +358,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Transformasi</h1>
+    <h1>Animasi Transformasi Geometri: Translasi & Refleksi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,16 +368,25 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal-objek-kotak">DATA AWAL OBJEK (KOTAK)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-kontrol-drag">Variabel kontrol drag</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-refleksi-dinamis">FUNGSI REFLEKSI DINAMIS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-klik-di-dalam-objek">CEK KLIK DI DALAM OBJEK</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gambar">FUNGSI GAMBAR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#event-mouse">EVENT MOUSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#main-program">MAIN PROGRAM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-program">📌 Deskripsi Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-data">🔢 Representasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-pergeseran">➡️ Translasi (Pergeseran)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">🪞 Refleksi terhadap Sumbu Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-perulangan-animasi">🔁 Proses Perulangan (Animasi)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setiap-langkah">Setiap langkah:</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kenapa-objek-bayangan-selalu-sejajar">🧠 Kenapa Objek &amp; Bayangan Selalu Sejajar?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-animasi">🎬 Sistem Animasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-visualisasi">🎨 Proses Visualisasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alur-logika-program">⚙️ Alur Logika Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">🎯 Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ilustrasi-sederhana">💡 Ilustrasi Sederhana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teknologi">🛠️ Teknologi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-ialah-link-google-colaab-nya">Berikut ialah Link Google Colaab nya</a></li>
+</ul>
+</li>
+</ul>
             </nav>
         </div>
     </div>
@@ -395,124 +397,179 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="transformasi">
-<h1>Transformasi<a class="headerlink" href="#transformasi" title="Link to this heading">#</a></h1>
-<p>Program: Transformasi Refleksi Dinamis
-Deskripsi:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="animasi-transformasi-geometri-translasi-refleksi">
+<h1>Animasi Transformasi Geometri: Translasi &amp; Refleksi<a class="headerlink" href="#animasi-transformasi-geometri-translasi-refleksi" title="Link to this heading">#</a></h1>
+<section id="deskripsi-program">
+<h2>📌 Deskripsi Program<a class="headerlink" href="#deskripsi-program" title="Link to this heading">#</a></h2>
+<p>Program ini dibuat menggunakan Python untuk menampilkan animasi transformasi geometri berupa:</p>
 <ul class="simple">
-<li><p>Menampilkan objek (kotak) di Kuadran 1</p></li>
-<li><p>Menampilkan bayangan hasil refleksi di Kuadran 2</p></li>
-<li><p>Objek dapat digeser dengan mouse (drag)</p></li>
-<li><p>Bayangan mengikuti secara real-time</p></li>
-<li><p>Sumbu refleksi bersifat dinamis (berubah sesuai posisi objek)
-“””</p></li>
+<li><p><strong>Translasi (pergeseran)</strong></p></li>
+<li><p><strong>Refleksi terhadap sumbu Y (pencerminan)</strong></p></li>
 </ul>
-<p>import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.path import Path</p>
+<p>Objek utama berupa <strong>persegi</strong> yang bergerak ke kanan, dan bayangannya selalu muncul secara <strong>simetris di sisi kiri</strong>, seperti efek cermin.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="data-awal-objek-kotak">
-<h1>DATA AWAL OBJEK (KOTAK)<a class="headerlink" href="#data-awal-objek-kotak" title="Link to this heading">#</a></h1>
-<p>points = np.array([
-[2, 2],
-[4, 2],
-[4, 4],
-[2, 4]
-])</p>
+<hr class="docutils" />
+<section id="representasi-data">
+<h2>🔢 Representasi Data<a class="headerlink" href="#representasi-data" title="Link to this heading">#</a></h2>
+<p>Titik-titik objek disimpan dalam bentuk pasangan koordinat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Contoh:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">B</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">C</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">D</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Semua titik ini membentuk sebuah persegi.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="variabel-kontrol-drag">
-<h1>Variabel kontrol drag<a class="headerlink" href="#variabel-kontrol-drag" title="Link to this heading">#</a></h1>
-<p>dragging = False
-start_mouse = None
-start_points = None</p>
+<hr class="docutils" />
+<section id="translasi-pergeseran">
+<h2>➡️ Translasi (Pergeseran)<a class="headerlink" href="#translasi-pergeseran" title="Link to this heading">#</a></h2>
+<p>Fungsi translasi pada program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (x + dx, y)
+</pre></div>
+</div>
+<p>Penjelasan:</p>
+<ul class="simple">
+<li><p>Nilai <strong>x bertambah</strong> → objek bergerak ke kanan</p></li>
+<li><p>Nilai <strong>y tetap</strong> → tidak naik atau turun</p></li>
+</ul>
+<p>Pada program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dx</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Artinya setiap langkah, objek bergeser 1 satuan ke kanan.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="fungsi-refleksi-dinamis">
-<h1>FUNGSI REFLEKSI DINAMIS<a class="headerlink" href="#fungsi-refleksi-dinamis" title="Link to this heading">#</a></h1>
-<p>def reflect_dynamic(points):
-“””
-Melakukan refleksi terhadap garis vertikal x = a
-dimana a berubah sesuai posisi objek
-“””
-a = np.mean(points[:,0]) - 2.5  # sumbu dinamis</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>reflected = points.copy()
-reflected[:,0] = 2*a - points[:,0]
-
-return reflected, a
+<hr class="docutils" />
+<section id="refleksi-terhadap-sumbu-y">
+<h2>🪞 Refleksi terhadap Sumbu Y<a class="headerlink" href="#refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h2>
+<p>Fungsi refleksi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(x, y) → (-x, y)
+</pre></div>
+</div>
+<p>Penjelasan:</p>
+<ul class="simple">
+<li><p>Posisi x dibalik (kanan ↔ kiri)</p></li>
+<li><p>Jarak terhadap sumbu Y tetap sama</p></li>
+</ul>
+<p>Contoh:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(4,2) → (-4,2)
+</pre></div>
+</div>
+<p>Ini membuat objek terlihat seperti bayangan di cermin.</p>
+</section>
+<hr class="docutils" />
+<section id="proses-perulangan-animasi">
+<h2>🔁 Proses Perulangan (Animasi)<a class="headerlink" href="#proses-perulangan-animasi" title="Link to this heading">#</a></h2>
+<p>Program menggunakan perulangan untuk membuat animasi:</p>
+<section id="setiap-langkah">
+<h3>Setiap langkah:<a class="headerlink" href="#setiap-langkah" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Objek digeser ke kanan (translasi)</p></li>
+<li><p>Bayangan dibuat dari posisi terbaru (refleksi)</p></li>
+</ol>
+<p>Urutan ini sangat penting karena:</p>
+<ul class="simple">
+<li><p>Bayangan harus selalu mengikuti objek</p></li>
+<li><p>Agar terlihat seperti cermin nyata</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kenapa-objek-bayangan-selalu-sejajar">
+<h2>🧠 Kenapa Objek &amp; Bayangan Selalu Sejajar?<a class="headerlink" href="#kenapa-objek-bayangan-selalu-sejajar" title="Link to this heading">#</a></h2>
+<p>Karena setiap titik memenuhi hubungan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x_bayangan</span> <span class="o">=</span> <span class="o">-</span><span class="n">x_objek</span>
+<span class="n">y_bayangan</span> <span class="o">=</span> <span class="n">y_objek</span>
+</pre></div>
+</div>
+<p>Artinya:</p>
+<ul class="simple">
+<li><p>Jarak ke sumbu Y sama</p></li>
+<li><p>Posisi saling berlawanan</p></li>
+</ul>
+<p>Hasilnya:</p>
+<ul class="simple">
+<li><p>Objek dan bayangan selalu <strong>simetris</strong></p></li>
+<li><p>Terlihat <strong>sejajar kiri-kanan</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="sistem-animasi">
+<h2>🎬 Sistem Animasi<a class="headerlink" href="#sistem-animasi" title="Link to this heading">#</a></h2>
+<p>Animasi dibuat menggunakan:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">matplotlib</span><span class="o">.</span><span class="n">animation</span><span class="o">.</span><span class="n">FuncAnimation</span>
+</pre></div>
+</div>
+<p>Fungsi ini:</p>
+<ul class="simple">
+<li><p>Menjalankan frame secara berulang</p></li>
+<li><p>Memanggil fungsi <code class="docutils literal notranslate"><span class="pre">update()</span></code> setiap langkah</p></li>
+<li><p>Menampilkan perubahan posisi objek</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="proses-visualisasi">
+<h2>🎨 Proses Visualisasi<a class="headerlink" href="#proses-visualisasi" title="Link to this heading">#</a></h2>
+<p>Setiap frame akan menampilkan:</p>
+<ul class="simple">
+<li><p>🔵 Objek asli (warna biru)</p></li>
+<li><p>🔴 Bayangan/cermin (warna merah)</p></li>
+<li><p>Grid koordinat</p></li>
+<li><p>Sumbu X dan Y</p></li>
+<li><p>Label titik (A, B, C, D)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="alur-logika-program">
+<h2>⚙️ Alur Logika Program<a class="headerlink" href="#alur-logika-program" title="Link to this heading">#</a></h2>
+<p>Secara sederhana:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Objek awal
+   ↓
+Translasi (geser kanan)
+   ↓
+Refleksi (buat bayangan)
+   ↓
+Tampilkan hasil
+   ↓
+Ulangi
 </pre></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="cek-klik-di-dalam-objek">
-<h1>CEK KLIK DI DALAM OBJEK<a class="headerlink" href="#cek-klik-di-dalam-objek" title="Link to this heading">#</a></h1>
-<p>def is_inside(x, y, polygon):
-return Path(polygon).contains_point((x, y))</p>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h2>🎯 Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Translasi mengubah posisi objek</p></li>
+<li><p>Refleksi membuat bayangan simetris</p></li>
+<li><p>Urutan transformasi menentukan hasil</p></li>
+<li><p>Animasi menunjukkan proses secara bertahap</p></li>
+</ul>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="fungsi-gambar">
-<h1>FUNGSI GAMBAR<a class="headerlink" href="#fungsi-gambar" title="Link to this heading">#</a></h1>
-<p>def draw():
-plt.cla()</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Gambar objek asli
-p = np.vstack([points, points[0]])
-plt.plot(p[:,0], p[:,1], marker=&#39;o&#39;, label=&quot;Asli (Q1)&quot;)
-
-# Gambar bayangan
-rp, axis = reflect_dynamic(points)
-rp = np.vstack([rp, rp[0]])
-plt.plot(rp[:,0], rp[:,1], marker=&#39;o&#39;, label=&quot;Cermin (Q2)&quot;)
-
-# Gambar sumbu refleksi
-plt.axvline(axis, linestyle=&#39;--&#39;, label=&quot;Sumbu Dinamis&quot;)
-
-# Garis sumbu koordinat
-plt.axhline(0)
-plt.axvline(0)
-
-plt.grid()
-plt.legend()
-plt.xlim(-10, 10)
-plt.ylim(-10, 10)
-plt.title(&quot;Transformasi Refleksi Dinamis (Drag dengan Mouse)&quot;)
-</pre></div>
-</div>
+<hr class="docutils" />
+<section id="ilustrasi-sederhana">
+<h2>💡 Ilustrasi Sederhana<a class="headerlink" href="#ilustrasi-sederhana" title="Link to this heading">#</a></h2>
+<p>Bayangkan kamu berdiri di depan cermin:</p>
+<ul class="simple">
+<li><p>Kamu bergerak ke kanan</p></li>
+<li><p>Bayangan kamu bergerak ke kiri</p></li>
+<li><p>Posisi tetap sejajar</p></li>
+</ul>
+<p>Program ini bekerja dengan cara yang sama 😊</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="event-mouse">
-<h1>EVENT MOUSE<a class="headerlink" href="#event-mouse" title="Link to this heading">#</a></h1>
-<p>def on_click(event):
-global dragging, start_mouse, start_points</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if event.inaxes and is_inside(event.xdata, event.ydata, points):
-    dragging = True
-    start_mouse = np.array([event.xdata, event.ydata])
-    start_points = points.copy()
-</pre></div>
-</div>
-<p>def on_release(event):
-global dragging
-dragging = False</p>
-<p>def on_motion(event):
-global points</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if dragging and event.inaxes:
-    delta = np.array([event.xdata, event.ydata]) - start_mouse
-
-    new_points = start_points + delta
-
-    # Batasi agar tetap di Kuadran 1
-    new_points[:,0] = np.maximum(new_points[:,0], 0.1)
-    new_points[:,1] = np.maximum(new_points[:,1], 0.1)
-
-    points[:] = new_points
-
-    draw()
-    plt.draw()
-</pre></div>
-</div>
+<hr class="docutils" />
+<section id="teknologi">
+<h2>🛠️ Teknologi<a class="headerlink" href="#teknologi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python</p></li>
+<li><p>Matplotlib</p></li>
+<li><p>Numpy</p></li>
+</ul>
+<hr class="docutils" />
+<section id="berikut-ialah-link-google-colaab-nya">
+<h3>Berikut ialah Link Google Colaab nya<a class="headerlink" href="#berikut-ialah-link-google-colaab-nya" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1myENYF1s8OEZET6SuhJC9VYk1ycXmKEK?usp=sharing">https://colab.research.google.com/drive/1myENYF1s8OEZET6SuhJC9VYk1ycXmKEK?usp=sharing</a></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="main-program">
-<h1>MAIN PROGRAM<a class="headerlink" href="#main-program" title="Link to this heading">#</a></h1>
-<p>fig = plt.figure()
-draw()</p>
-<p>fig.canvas.mpl_connect(‘button_press_event’, on_click)
-fig.canvas.mpl_connect(‘button_release_event’, on_release)
-fig.canvas.mpl_connect(‘motion_notify_event’, on_motion)</p>
-<p>plt.show()</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -581,16 +638,25 @@ fig.canvas.mpl_connect(‘motion_notify_event’, on_motion)</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal-objek-kotak">DATA AWAL OBJEK (KOTAK)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-kontrol-drag">Variabel kontrol drag</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-refleksi-dinamis">FUNGSI REFLEKSI DINAMIS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-klik-di-dalam-objek">CEK KLIK DI DALAM OBJEK</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gambar">FUNGSI GAMBAR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#event-mouse">EVENT MOUSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#main-program">MAIN PROGRAM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-program">📌 Deskripsi Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-data">🔢 Representasi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#translasi-pergeseran">➡️ Translasi (Pergeseran)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">🪞 Refleksi terhadap Sumbu Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-perulangan-animasi">🔁 Proses Perulangan (Animasi)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setiap-langkah">Setiap langkah:</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kenapa-objek-bayangan-selalu-sejajar">🧠 Kenapa Objek &amp; Bayangan Selalu Sejajar?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-animasi">🎬 Sistem Animasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-visualisasi">🎨 Proses Visualisasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alur-logika-program">⚙️ Alur Logika Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">🎯 Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ilustrasi-sederhana">💡 Ilustrasi Sederhana</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teknologi">🛠️ Teknologi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-ialah-link-google-colaab-nya">Berikut ialah Link Google Colaab nya</a></li>
+</ul>
+</li>
+</ul>
   </nav></div>
 
 </div></div>
