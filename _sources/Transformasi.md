@@ -12,9 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.path import Path
 
-# ==============================
 # DATA AWAL OBJEK (KOTAK)
-# ==============================
 points = np.array([
     [2, 2],
     [4, 2],
@@ -28,9 +26,7 @@ start_mouse = None
 start_points = None
 
 
-# ==============================
 # FUNGSI REFLEKSI DINAMIS
-# ==============================
 def reflect_dynamic(points):
     """
     Melakukan refleksi terhadap garis vertikal x = a
@@ -44,16 +40,16 @@ def reflect_dynamic(points):
     return reflected, a
 
 
-# ==============================
+
 # CEK KLIK DI DALAM OBJEK
-# ==============================
+
 def is_inside(x, y, polygon):
     return Path(polygon).contains_point((x, y))
 
 
-# ==============================
+
 # FUNGSI GAMBAR
-# ==============================
+
 def draw():
     plt.cla()
 
@@ -80,9 +76,9 @@ def draw():
     plt.title("Transformasi Refleksi Dinamis (Drag dengan Mouse)")
 
 
-# ==============================
+
 # EVENT MOUSE
-# ==============================
+
 def on_click(event):
     global dragging, start_mouse, start_points
 
@@ -115,9 +111,9 @@ def on_motion(event):
         plt.draw()
 
 
-# ==============================
+
 # MAIN PROGRAM
-# ==============================
+
 fig = plt.figure()
 draw()
 

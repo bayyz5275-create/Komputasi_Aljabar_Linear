@@ -182,18 +182,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -388,25 +376,13 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal-objek-kotak">DATA AWAL OBJEK (KOTAK)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-kontrol-drag">Variabel kontrol drag</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-refleksi-dinamis">FUNGSI REFLEKSI DINAMIS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-klik-di-dalam-objek">CEK KLIK DI DALAM OBJEK</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gambar">FUNGSI GAMBAR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#event-mouse">EVENT MOUSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#main-program">MAIN PROGRAM</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">==============================</a></li>
 </ul>
 
             </nav>
@@ -435,14 +411,8 @@ Deskripsi:</p>
 import matplotlib.pyplot as plt
 from matplotlib.path import Path</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>==============================<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="data-awal-objek-kotak">
 <h1>DATA AWAL OBJEK (KOTAK)<a class="headerlink" href="#data-awal-objek-kotak" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1>==============================<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
 <p>points = np.array([
 [2, 2],
 [4, 2],
@@ -456,14 +426,8 @@ from matplotlib.path import Path</p>
 start_mouse = None
 start_points = None</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id3">
-<h1>==============================<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="fungsi-refleksi-dinamis">
 <h1>FUNGSI REFLEKSI DINAMIS<a class="headerlink" href="#fungsi-refleksi-dinamis" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id4">
-<h1>==============================<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
 <p>def reflect_dynamic(points):
 “””
 Melakukan refleksi terhadap garis vertikal x = a
@@ -477,25 +441,13 @@ return reflected, a
 </pre></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id5">
-<h1>==============================<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="cek-klik-di-dalam-objek">
 <h1>CEK KLIK DI DALAM OBJEK<a class="headerlink" href="#cek-klik-di-dalam-objek" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id6">
-<h1>==============================<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
 <p>def is_inside(x, y, polygon):
 return Path(polygon).contains_point((x, y))</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id7">
-<h1>==============================<a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="fungsi-gambar">
 <h1>FUNGSI GAMBAR<a class="headerlink" href="#fungsi-gambar" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id8">
-<h1>==============================<a class="headerlink" href="#id8" title="Link to this heading">#</a></h1>
 <p>def draw():
 plt.cla()</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Gambar objek asli
@@ -522,14 +474,8 @@ plt.title(&quot;Transformasi Refleksi Dinamis (Drag dengan Mouse)&quot;)
 </pre></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id9">
-<h1>==============================<a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="event-mouse">
 <h1>EVENT MOUSE<a class="headerlink" href="#event-mouse" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id10">
-<h1>==============================<a class="headerlink" href="#id10" title="Link to this heading">#</a></h1>
 <p>def on_click(event):
 global dragging, start_mouse, start_points</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if event.inaxes and is_inside(event.xdata, event.ydata, points):
@@ -559,14 +505,8 @@ global points</p>
 </pre></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id11">
-<h1>==============================<a class="headerlink" href="#id11" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="main-program">
 <h1>MAIN PROGRAM<a class="headerlink" href="#main-program" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id12">
-<h1>==============================<a class="headerlink" href="#id12" title="Link to this heading">#</a></h1>
 <p>fig = plt.figure()
 draw()</p>
 <p>fig.canvas.mpl_connect(‘button_press_event’, on_click)
@@ -642,25 +582,13 @@ fig.canvas.mpl_connect(‘motion_notify_event’, on_motion)</p>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Transformasi</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal-objek-kotak">DATA AWAL OBJEK (KOTAK)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-kontrol-drag">Variabel kontrol drag</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-refleksi-dinamis">FUNGSI REFLEKSI DINAMIS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cek-klik-di-dalam-objek">CEK KLIK DI DALAM OBJEK</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gambar">FUNGSI GAMBAR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#event-mouse">EVENT MOUSE</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">==============================</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">==============================</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#main-program">MAIN PROGRAM</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">==============================</a></li>
 </ul>
 
   </nav></div>
