@@ -1,3 +1,4 @@
+code ini rapikan 
 #  Transformasi Matriks 
 ---
 ##  Representasi Data
@@ -97,15 +98,14 @@ Contoh:
 ---
 
 ## Refleksi dalam Matriks
-
-[
+\[
 R =
 \begin{bmatrix}
--1 & 0 & 0 \
-0 & 1 & 0 \
+-1 & 0 & 0 \\
+0 & 1 & 0 \\
 0 & 0 & 1
 \end{bmatrix}
-]
+\]
 
 Transformasi:
 
@@ -228,6 +228,12 @@ Seperti berdiri di depan cermin:
 * Kamu bergerak ke kanan
 * Bayangan bergerak ke kiri
 * Posisi tetap sejajar
+
+
+tidak perlu di ubah cukup di rapikan saja 
+
+
+
 
 ---
 ## Link Google Collabnya
