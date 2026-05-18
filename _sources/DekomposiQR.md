@@ -17,7 +17,7 @@ Sedangkan pada file *Dekomposisi QR* dijelaskan bahwa algoritma QR digunakan unt
 
 ---
 
-# Matriks yang Digunakan
+## Matriks yang Digunakan
 
 \[
 A=
@@ -43,7 +43,7 @@ Semakin banyak iterasi dilakukan, matriks akan mendekati bentuk diagonal dan ele
 
 ---
 
-# Program Python
+## Program Python
 
 ```python
 import numpy as np
@@ -131,9 +131,9 @@ print(f"λ2 ≈ {eigen2:.4f}")
 
 ---
 
-# Penjelasan Program
+## Penjelasan Program
 
-# 1. Import Library
+### 1. Import Library
 
 ```python
 import numpy as np
@@ -148,7 +148,7 @@ Library `numpy` digunakan untuk operasi matriks seperti:
 
 ---
 
-# 2. Membentuk Matriks Awal
+### 2. Membentuk Matriks Awal
 
 ```python
 A = np.array([
@@ -171,7 +171,7 @@ Pada file *Eigen Value dan Eigen Vector*, matriks persegi digunakan untuk mencar
 
 ---
 
-# 3. Fungsi Gram-Schmidt
+### 3. Fungsi Gram-Schmidt
 
 ```python
 def gram_schmidt(matrix):
@@ -190,7 +190,7 @@ Pada file *Dekomposisi QR* dijelaskan bahwa:
 
 ---
 
-# 4. Mengambil Kolom Matriks
+### 4. Mengambil Kolom Matriks
 
 ```python
 a1 = matrix[:, 0]
@@ -217,7 +217,7 @@ Sesuai konsep Gram-Schmidt pada file PDF, setiap kolom akan diubah menjadi vekto
 
 ---
 
-# 5. Membentuk Vektor \(q_1\)
+### 5. Membentuk Vektor \(q_1\)
 
 ```python
 q1 = a1 / np.linalg.norm(a1)
@@ -248,7 +248,7 @@ q_1=
 
 ---
 
-# 6. Menghitung Proyeksi
+### 6. Menghitung Proyeksi
 
 ```python
 proj = np.dot(q1, a2) * q1
@@ -266,7 +266,7 @@ Langkah ini digunakan untuk menghilangkan komponen \(a_2\) yang searah dengan \(
 
 ---
 
-# 7. Membentuk Vektor Ortogonal
+### 7. Membentuk Vektor Ortogonal
 
 ```python
 u2 = a2 - proj
@@ -283,7 +283,7 @@ Hasil vektor menjadi ortogonal terhadap \(q_1\).
 
 ---
 
-# 8. Membentuk Vektor \(q_2\)
+### 8. Membentuk Vektor \(q_2\)
 
 ```python
 q2 = u2 / np.linalg.norm(u2)
@@ -298,7 +298,7 @@ q_2=
 
 ---
 
-# 9. Membentuk Matriks \(Q\)
+### 9. Membentuk Matriks \(Q\)
 
 ```python
 Q = np.column_stack((q1, q2))
@@ -315,7 +315,7 @@ q_1 & q_2
 
 ---
 
-# 10. Membentuk Matriks \(R\)
+### 10. Membentuk Matriks \(R\)
 
 ```python
 R = Q.T @ matrix
@@ -331,7 +331,7 @@ Matriks \(R\) berbentuk segitiga atas.
 
 ---
 
-# 11. Iterasi QR
+### 11. Iterasi QR
 
 ```python
 for i in range(1, 11):
@@ -355,9 +355,9 @@ A_{k+1}=R_kQ_k
 
 ---
 
-# Tahap Iterasi QR
+## Tahap Iterasi QR
 
-# Iterasi 1
+### Iterasi 1
 
 \[
 A_1=
@@ -371,7 +371,7 @@ Elemen di luar diagonal masih cukup besar.
 
 ---
 
-# Iterasi 2
+### Iterasi 2
 
 \[
 A_2=
@@ -385,7 +385,7 @@ Elemen di luar diagonal mulai mengecil.
 
 ---
 
-# Iterasi 3
+### Iterasi 3
 
 \[
 A_3=
@@ -399,7 +399,7 @@ Nilai diagonal mulai mendekati nilai eigen sebenarnya.
 
 ---
 
-# Iterasi 4
+### Iterasi 4
 
 \[
 A_4=
@@ -413,7 +413,7 @@ Elemen luar diagonal semakin kecil.
 
 ---
 
-# Iterasi 5
+### Iterasi 5
 
 \[
 A_5=
@@ -427,7 +427,7 @@ Matriks mulai mendekati bentuk diagonal.
 
 ---
 
-# Iterasi 6
+### Iterasi 6
 
 \[
 A_6=
@@ -441,7 +441,7 @@ Nilai diagonal semakin stabil.
 
 ---
 
-# Iterasi 7
+### Iterasi 7
 
 \[
 A_7=
@@ -455,7 +455,7 @@ Elemen luar diagonal hampir nol.
 
 ---
 
-# Iterasi 8
+### Iterasi 8
 
 \[
 A_8=
@@ -469,7 +469,7 @@ Matriks hampir diagonal sempurna.
 
 ---
 
-# Iterasi 9
+### Iterasi 9
 
 \[
 A_9=
@@ -483,7 +483,7 @@ Perubahan matriks semakin kecil.
 
 ---
 
-# Iterasi 10
+### Iterasi 10
 
 \[
 A_{10}=
@@ -497,7 +497,7 @@ Elemen di luar diagonal hampir nol sehingga matriks mendekati bentuk diagonal.
 
 ---
 
-# Hasil Akhir Nilai Eigen
+### Hasil Akhir Nilai Eigen
 
 Setelah 10 iterasi:
 
@@ -523,7 +523,7 @@ Sesuai teori pada file *Eigen Value dan Eigen Vector*, nilai diagonal akhir matr
 
 ---
 
-# Kesimpulan
+### Kesimpulan
 
 Program berhasil menerapkan:
 

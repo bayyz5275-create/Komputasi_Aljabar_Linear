@@ -178,33 +178,6 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -398,36 +371,44 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">1. Import Library</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-awal">2. Membentuk Matriks Awal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gram-schmidt">3. Fungsi Gram-Schmidt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">1. Import Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-awal">2. Membentuk Matriks Awal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gram-schmidt">3. Fungsi Gram-Schmidt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mathrm-proj-q-1-a-2">[
-\mathrm{proj}_{q_1}(a_2)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-3">Iterasi 3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-4">Iterasi 4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-5">Iterasi 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-6">Iterasi 6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-7">Iterasi 7</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-8">Iterasi 8</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-9">Iterasi 9</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-10">Iterasi 10</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-nilai-eigen">Hasil Akhir Nilai Eigen</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+\mathrm{proj}_{q_1}(a_2)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-3">Iterasi 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-4">Iterasi 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-5">Iterasi 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-6">Iterasi 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-7">Iterasi 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-8">Iterasi 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-9">Iterasi 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-10">Iterasi 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-nilai-eigen">Hasil Akhir Nilai Eigen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing">https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing</a></li>
 </ul>
@@ -457,10 +438,9 @@
 (A-\lambda I)v=0
 ]</p>
 <p>Sedangkan pada file <em>Dekomposisi QR</em> dijelaskan bahwa algoritma QR digunakan untuk mencari nilai eigen secara numerik melalui iterasi matriks. :contentReference[oaicite:2]{index=2}</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="matriks-yang-digunakan">
-<h1>Matriks yang Digunakan<a class="headerlink" href="#matriks-yang-digunakan" title="Link to this heading">#</a></h1>
+<section id="matriks-yang-digunakan">
+<h2>Matriks yang Digunakan<a class="headerlink" href="#matriks-yang-digunakan" title="Link to this heading">#</a></h2>
 <p>[
 A=
 \begin{bmatrix}
@@ -479,8 +459,8 @@ A_{k+1}=RQ
 <p>Semakin banyak iterasi dilakukan, matriks akan mendekati bentuk diagonal dan elemen diagonalnya menjadi nilai eigen.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="program-python">
-<h1>Program Python<a class="headerlink" href="#program-python" title="Link to this heading">#</a></h1>
+<section id="program-python">
+<h2>Program Python<a class="headerlink" href="#program-python" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># =========================================</span>
@@ -566,11 +546,10 @@ A_{k+1}=RQ
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="penjelasan-program">
-<h1>Penjelasan Program<a class="headerlink" href="#penjelasan-program" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="import-library">
-<h1>1. Import Library<a class="headerlink" href="#import-library" title="Link to this heading">#</a></h1>
+<section id="penjelasan-program">
+<h2>Penjelasan Program<a class="headerlink" href="#penjelasan-program" title="Link to this heading">#</a></h2>
+<section id="import-library">
+<h3>1. Import Library<a class="headerlink" href="#import-library" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
@@ -583,8 +562,8 @@ A_{k+1}=RQ
 </ul>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-matriks-awal">
-<h1>2. Membentuk Matriks Awal<a class="headerlink" href="#membentuk-matriks-awal" title="Link to this heading">#</a></h1>
+<section id="membentuk-matriks-awal">
+<h3>2. Membentuk Matriks Awal<a class="headerlink" href="#membentuk-matriks-awal" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
     <span class="p">[</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
     <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">]</span>
@@ -602,8 +581,8 @@ A_0=
 <p>Pada file <em>Eigen Value dan Eigen Vector</em>, matriks persegi digunakan untuk mencari nilai eigen dan eigenvector. :contentReference[oaicite:3]{index=3}</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="fungsi-gram-schmidt">
-<h1>3. Fungsi Gram-Schmidt<a class="headerlink" href="#fungsi-gram-schmidt" title="Link to this heading">#</a></h1>
+<section id="fungsi-gram-schmidt">
+<h3>3. Fungsi Gram-Schmidt<a class="headerlink" href="#fungsi-gram-schmidt" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">gram_schmidt</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
 </pre></div>
 </div>
@@ -618,8 +597,8 @@ A = QR
 </ul>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="mengambil-kolom-matriks">
-<h1>4. Mengambil Kolom Matriks<a class="headerlink" href="#mengambil-kolom-matriks" title="Link to this heading">#</a></h1>
+<section id="mengambil-kolom-matriks">
+<h3>4. Mengambil Kolom Matriks<a class="headerlink" href="#mengambil-kolom-matriks" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">a2</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
@@ -641,8 +620,8 @@ a_2=
 <p>Sesuai konsep Gram-Schmidt pada file PDF, setiap kolom akan diubah menjadi vektor ortonormal. :contentReference[oaicite:5]{index=5}</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-vektor-q-1">
-<h1>5. Membentuk Vektor (q_1)<a class="headerlink" href="#membentuk-vektor-q-1" title="Link to this heading">#</a></h1>
+<section id="membentuk-vektor-q-1">
+<h3>5. Membentuk Vektor (q_1)<a class="headerlink" href="#membentuk-vektor-q-1" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">q1</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -665,12 +644,14 @@ q_1=
 ]</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="menghitung-proyeksi">
-<h1>6. Menghitung Proyeksi<a class="headerlink" href="#menghitung-proyeksi" title="Link to this heading">#</a></h1>
+<section id="menghitung-proyeksi">
+<h3>6. Menghitung Proyeksi<a class="headerlink" href="#menghitung-proyeksi" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">proj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span> <span class="o">*</span> <span class="n">q1</span>
 </pre></div>
 </div>
 <p>Rumus proyeksi:</p>
+</section>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="mathrm-proj-q-1-a-2">
 <h1>[
@@ -678,10 +659,9 @@ q_1=
 <p>(q_1 \cdot a_2)q_1
 ]</p>
 <p>Langkah ini digunakan untuk menghilangkan komponen (a_2) yang searah dengan (q_1).</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-vektor-ortogonal">
-<h1>7. Membentuk Vektor Ortogonal<a class="headerlink" href="#membentuk-vektor-ortogonal" title="Link to this heading">#</a></h1>
+<section id="membentuk-vektor-ortogonal">
+<h2>7. Membentuk Vektor Ortogonal<a class="headerlink" href="#membentuk-vektor-ortogonal" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">u2</span> <span class="o">=</span> <span class="n">a2</span> <span class="o">-</span> <span class="n">proj</span>
 </pre></div>
 </div>
@@ -691,10 +671,10 @@ u_2=
 a_2-\mathrm{proj}_{q_1}(a_2)
 ]</p>
 <p>Hasil vektor menjadi ortogonal terhadap (q_1).</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-vektor-q-2">
-<h1>8. Membentuk Vektor (q_2)<a class="headerlink" href="#membentuk-vektor-q-2" title="Link to this heading">#</a></h1>
+</section>
+<section id="membentuk-vektor-q-2">
+<h2>8. Membentuk Vektor (q_2)<a class="headerlink" href="#membentuk-vektor-q-2" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">q2</span> <span class="o">=</span> <span class="n">u2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u2</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -703,10 +683,10 @@ a_2-\mathrm{proj}_{q_1}(a_2)
 q_2=
 \frac{u_2}{|u_2|}
 ]</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-matriks-q">
-<h1>9. Membentuk Matriks (Q)<a class="headerlink" href="#membentuk-matriks-q" title="Link to this heading">#</a></h1>
+</section>
+<section id="membentuk-matriks-q">
+<h2>9. Membentuk Matriks (Q)<a class="headerlink" href="#membentuk-matriks-q" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">q1</span><span class="p">,</span> <span class="n">q2</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -717,10 +697,10 @@ Q=
 q_1 &amp; q_2
 \end{bmatrix}
 ]</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="membentuk-matriks-r">
-<h1>10. Membentuk Matriks (R)<a class="headerlink" href="#membentuk-matriks-r" title="Link to this heading">#</a></h1>
+</section>
+<section id="membentuk-matriks-r">
+<h2>10. Membentuk Matriks (R)<a class="headerlink" href="#membentuk-matriks-r" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">matrix</span>
 </pre></div>
 </div>
@@ -729,10 +709,10 @@ q_1 &amp; q_2
 R = Q^TA
 ]</p>
 <p>Matriks (R) berbentuk segitiga atas.</p>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-qr">
-<h1>11. Iterasi QR<a class="headerlink" href="#iterasi-qr" title="Link to this heading">#</a></h1>
+</section>
+<section id="iterasi-qr">
+<h2>11. Iterasi QR<a class="headerlink" href="#iterasi-qr" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 </pre></div>
 </div>
@@ -748,11 +728,10 @@ A_{k+1}=R_kQ_k
 <p>:contentReference[oaicite:6]{index=6}</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahap-iterasi-qr">
-<h1>Tahap Iterasi QR<a class="headerlink" href="#tahap-iterasi-qr" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-1">
-<h1>Iterasi 1<a class="headerlink" href="#iterasi-1" title="Link to this heading">#</a></h1>
+<section id="tahap-iterasi-qr">
+<h2>Tahap Iterasi QR<a class="headerlink" href="#tahap-iterasi-qr" title="Link to this heading">#</a></h2>
+<section id="iterasi-1">
+<h3>Iterasi 1<a class="headerlink" href="#iterasi-1" title="Link to this heading">#</a></h3>
 <p>[
 A_1=
 \begin{bmatrix}
@@ -763,8 +742,8 @@ A_1=
 <p>Elemen di luar diagonal masih cukup besar.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-2">
-<h1>Iterasi 2<a class="headerlink" href="#iterasi-2" title="Link to this heading">#</a></h1>
+<section id="iterasi-2">
+<h3>Iterasi 2<a class="headerlink" href="#iterasi-2" title="Link to this heading">#</a></h3>
 <p>[
 A_2=
 \begin{bmatrix}
@@ -775,8 +754,8 @@ A_2=
 <p>Elemen di luar diagonal mulai mengecil.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-3">
-<h1>Iterasi 3<a class="headerlink" href="#iterasi-3" title="Link to this heading">#</a></h1>
+<section id="iterasi-3">
+<h3>Iterasi 3<a class="headerlink" href="#iterasi-3" title="Link to this heading">#</a></h3>
 <p>[
 A_3=
 \begin{bmatrix}
@@ -787,8 +766,8 @@ A_3=
 <p>Nilai diagonal mulai mendekati nilai eigen sebenarnya.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-4">
-<h1>Iterasi 4<a class="headerlink" href="#iterasi-4" title="Link to this heading">#</a></h1>
+<section id="iterasi-4">
+<h3>Iterasi 4<a class="headerlink" href="#iterasi-4" title="Link to this heading">#</a></h3>
 <p>[
 A_4=
 \begin{bmatrix}
@@ -799,8 +778,8 @@ A_4=
 <p>Elemen luar diagonal semakin kecil.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-5">
-<h1>Iterasi 5<a class="headerlink" href="#iterasi-5" title="Link to this heading">#</a></h1>
+<section id="iterasi-5">
+<h3>Iterasi 5<a class="headerlink" href="#iterasi-5" title="Link to this heading">#</a></h3>
 <p>[
 A_5=
 \begin{bmatrix}
@@ -811,8 +790,8 @@ A_5=
 <p>Matriks mulai mendekati bentuk diagonal.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-6">
-<h1>Iterasi 6<a class="headerlink" href="#iterasi-6" title="Link to this heading">#</a></h1>
+<section id="iterasi-6">
+<h3>Iterasi 6<a class="headerlink" href="#iterasi-6" title="Link to this heading">#</a></h3>
 <p>[
 A_6=
 \begin{bmatrix}
@@ -823,8 +802,8 @@ A_6=
 <p>Nilai diagonal semakin stabil.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-7">
-<h1>Iterasi 7<a class="headerlink" href="#iterasi-7" title="Link to this heading">#</a></h1>
+<section id="iterasi-7">
+<h3>Iterasi 7<a class="headerlink" href="#iterasi-7" title="Link to this heading">#</a></h3>
 <p>[
 A_7=
 \begin{bmatrix}
@@ -835,8 +814,8 @@ A_7=
 <p>Elemen luar diagonal hampir nol.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-8">
-<h1>Iterasi 8<a class="headerlink" href="#iterasi-8" title="Link to this heading">#</a></h1>
+<section id="iterasi-8">
+<h3>Iterasi 8<a class="headerlink" href="#iterasi-8" title="Link to this heading">#</a></h3>
 <p>[
 A_8=
 \begin{bmatrix}
@@ -847,8 +826,8 @@ A_8=
 <p>Matriks hampir diagonal sempurna.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-9">
-<h1>Iterasi 9<a class="headerlink" href="#iterasi-9" title="Link to this heading">#</a></h1>
+<section id="iterasi-9">
+<h3>Iterasi 9<a class="headerlink" href="#iterasi-9" title="Link to this heading">#</a></h3>
 <p>[
 A_9=
 \begin{bmatrix}
@@ -859,8 +838,8 @@ A_9=
 <p>Perubahan matriks semakin kecil.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="iterasi-10">
-<h1>Iterasi 10<a class="headerlink" href="#iterasi-10" title="Link to this heading">#</a></h1>
+<section id="iterasi-10">
+<h3>Iterasi 10<a class="headerlink" href="#iterasi-10" title="Link to this heading">#</a></h3>
 <p>[
 A_{10}=
 \begin{bmatrix}
@@ -871,8 +850,8 @@ A_{10}=
 <p>Elemen di luar diagonal hampir nol sehingga matriks mendekati bentuk diagonal.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="hasil-akhir-nilai-eigen">
-<h1>Hasil Akhir Nilai Eigen<a class="headerlink" href="#hasil-akhir-nilai-eigen" title="Link to this heading">#</a></h1>
+<section id="hasil-akhir-nilai-eigen">
+<h3>Hasil Akhir Nilai Eigen<a class="headerlink" href="#hasil-akhir-nilai-eigen" title="Link to this heading">#</a></h3>
 <p>Setelah 10 iterasi:</p>
 <p>[
 A_{10}\approx
@@ -891,8 +870,8 @@ A_{10}\approx
 <p>Sesuai teori pada file <em>Eigen Value dan Eigen Vector</em>, nilai diagonal akhir matriks hasil iterasi merupakan pendekatan nilai eigen matriks awal. :contentReference[oaicite:7]{index=7}</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
-<h1>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<section id="kesimpulan">
+<h3>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
 <p>Program berhasil menerapkan:</p>
 <ul class="simple">
 <li><p>metode Gram-Schmidt</p></li>
@@ -915,6 +894,8 @@ A_k \rightarrow
 \lambda_2 = 1
 ]</p>
 <p>Nilai tersebut sesuai dengan hasil analitik dari persamaan karakteristik matriks.</p>
+</section>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="berikut-programnya">
 <h1>Berikut Programnya<a class="headerlink" href="#berikut-programnya" title="Link to this heading">#</a></h1>
@@ -989,36 +970,44 @@ A_k \rightarrow
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">1. Import Library</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-awal">2. Membentuk Matriks Awal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gram-schmidt">3. Fungsi Gram-Schmidt</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">1. Import Library</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-awal">2. Membentuk Matriks Awal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-gram-schmidt">3. Fungsi Gram-Schmidt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mathrm-proj-q-1-a-2">[
-\mathrm{proj}_{q_1}(a_2)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-3">Iterasi 3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-4">Iterasi 4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-5">Iterasi 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-6">Iterasi 6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-7">Iterasi 7</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-8">Iterasi 8</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-9">Iterasi 9</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-10">Iterasi 10</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-nilai-eigen">Hasil Akhir Nilai Eigen</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+\mathrm{proj}_{q_1}(a_2)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-3">Iterasi 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-4">Iterasi 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-5">Iterasi 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-6">Iterasi 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-7">Iterasi 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-8">Iterasi 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-9">Iterasi 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-10">Iterasi 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-nilai-eigen">Hasil Akhir Nilai Eigen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing">https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing</a></li>
 </ul>
