@@ -256,11 +256,7 @@ proj = np.dot(q1, a2) * q1
 
 Rumus proyeksi:
 
-\[
-\mathrm{proj}_{q_1}(a_2)
-=
-(q_1 \cdot a_2)q_1
-\]
+\[\mathrm{proj}_{q_1}(a_2) = (q_1 \cdot a_2)q_1\]
 
 Langkah ini digunakan untuk menghilangkan komponen \(a_2\) yang searah dengan \(q_1\).
 
@@ -553,5 +549,5 @@ Hasil akhir:
 
 Nilai tersebut sesuai dengan hasil analitik dari persamaan karakteristik matriks.
 
-# Berikut Programnya
+## Berikut Programnya
 ## https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing

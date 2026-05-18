@@ -176,8 +176,6 @@
 <li class="toctree-l1"><a class="reference internal" href="EvaluasiDE.html">Evaluasi Determinan Dan Invers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -371,7 +369,6 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a><ul class="nav section-nav flex-column">
@@ -381,17 +378,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mathrm-proj-q-1-a-2">[
-\mathrm{proj}_{q_1}(a_2)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
@@ -407,14 +400,9 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing">https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -650,18 +638,12 @@ q_1=
 </pre></div>
 </div>
 <p>Rumus proyeksi:</p>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="mathrm-proj-q-1-a-2">
-<h1>[
-\mathrm{proj}_{q_1}(a_2)<a class="headerlink" href="#mathrm-proj-q-1-a-2" title="Link to this heading">#</a></h1>
-<p>(q_1 \cdot a_2)q_1
-]</p>
+<p>[\mathrm{proj}_{q_1}(a_2) = (q_1 \cdot a_2)q_1]</p>
 <p>Langkah ini digunakan untuk menghilangkan komponen (a_2) yang searah dengan (q_1).</p>
+</section>
 <hr class="docutils" />
 <section id="membentuk-vektor-ortogonal">
-<h2>7. Membentuk Vektor Ortogonal<a class="headerlink" href="#membentuk-vektor-ortogonal" title="Link to this heading">#</a></h2>
+<h3>7. Membentuk Vektor Ortogonal<a class="headerlink" href="#membentuk-vektor-ortogonal" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">u2</span> <span class="o">=</span> <span class="n">a2</span> <span class="o">-</span> <span class="n">proj</span>
 </pre></div>
 </div>
@@ -671,10 +653,10 @@ u_2=
 a_2-\mathrm{proj}_{q_1}(a_2)
 ]</p>
 <p>Hasil vektor menjadi ortogonal terhadap (q_1).</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="membentuk-vektor-q-2">
-<h2>8. Membentuk Vektor (q_2)<a class="headerlink" href="#membentuk-vektor-q-2" title="Link to this heading">#</a></h2>
+<h3>8. Membentuk Vektor (q_2)<a class="headerlink" href="#membentuk-vektor-q-2" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">q2</span> <span class="o">=</span> <span class="n">u2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u2</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -683,10 +665,10 @@ a_2-\mathrm{proj}_{q_1}(a_2)
 q_2=
 \frac{u_2}{|u_2|}
 ]</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="membentuk-matriks-q">
-<h2>9. Membentuk Matriks (Q)<a class="headerlink" href="#membentuk-matriks-q" title="Link to this heading">#</a></h2>
+<h3>9. Membentuk Matriks (Q)<a class="headerlink" href="#membentuk-matriks-q" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">q1</span><span class="p">,</span> <span class="n">q2</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -697,10 +679,10 @@ Q=
 q_1 &amp; q_2
 \end{bmatrix}
 ]</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="membentuk-matriks-r">
-<h2>10. Membentuk Matriks (R)<a class="headerlink" href="#membentuk-matriks-r" title="Link to this heading">#</a></h2>
+<h3>10. Membentuk Matriks (R)<a class="headerlink" href="#membentuk-matriks-r" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">matrix</span>
 </pre></div>
 </div>
@@ -709,10 +691,10 @@ q_1 &amp; q_2
 R = Q^TA
 ]</p>
 <p>Matriks (R) berbentuk segitiga atas.</p>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="iterasi-qr">
-<h2>11. Iterasi QR<a class="headerlink" href="#iterasi-qr" title="Link to this heading">#</a></h2>
+<h3>11. Iterasi QR<a class="headerlink" href="#iterasi-qr" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 </pre></div>
 </div>
@@ -726,6 +708,7 @@ A_k = Q_kR_k
 A_{k+1}=R_kQ_k
 ]</p>
 <p>:contentReference[oaicite:6]{index=6}</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="tahap-iterasi-qr">
@@ -896,9 +879,9 @@ A_k \rightarrow
 <p>Nilai tersebut sesuai dengan hasil analitik dari persamaan karakteristik matriks.</p>
 </section>
 </section>
+<section id="berikut-programnya">
+<h2>Berikut Programnya<a class="headerlink" href="#berikut-programnya" title="Link to this heading">#</a></h2>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="berikut-programnya">
-<h1>Berikut Programnya<a class="headerlink" href="#berikut-programnya" title="Link to this heading">#</a></h1>
 <section id="https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing">
 <h2><a class="reference external" href="https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing">https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing</a><a class="headerlink" href="#https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing" title="Link to this heading">#</a></h2>
 </section>
@@ -970,7 +953,6 @@ A_k \rightarrow
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Algoritma QR Dasar dengan Gram-Schmidt</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-yang-digunakan">Matriks yang Digunakan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-python">Program Python</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-program">Penjelasan Program</a><ul class="nav section-nav flex-column">
@@ -980,17 +962,13 @@ A_k \rightarrow
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-kolom-matriks">4. Mengambil Kolom Matriks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-1">5. Membentuk Vektor (q_1)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-proyeksi">6. Menghitung Proyeksi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mathrm-proj-q-1-a-2">[
-\mathrm{proj}_{q_1}(a_2)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-ortogonal">7. Membentuk Vektor Ortogonal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-vektor-q-2">8. Membentuk Vektor (q_2)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-q">9. Membentuk Matriks (Q)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-r">10. Membentuk Matriks (R)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-qr">11. Iterasi QR</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-iterasi-qr">Tahap Iterasi QR</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-1">Iterasi 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterasi-2">Iterasi 2</a></li>
@@ -1006,14 +984,9 @@ A_k \rightarrow
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-programnya">Berikut Programnya</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-colab-research-google-com-drive-1xcx6oo5tf9kqeq3d4s4ihks9dwzsqpaf-usp-sharing">https://colab.research.google.com/drive/1XCx6oO5Tf9kqEq3D4S4ihKs9dwZSqPAF?usp=sharing</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
