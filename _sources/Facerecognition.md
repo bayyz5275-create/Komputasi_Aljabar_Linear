@@ -278,6 +278,7 @@ Tahapan kerja sistem:
 4. mendeteksi wajah dari kamera,
 5. melakukan prediksi identitas secara real-time.
 
+
 ---
 
 # Tahapan Preprocessing
@@ -383,3 +384,5 @@ Kekurangan:
 - kurang stabil untuk ekspresi berbeda.
 
 Walaupun termasuk metode lama, Eigenface tetap menjadi fondasi penting dalam perkembangan sistem pengenalan wajah modern.
+
+### file:///C:/Users/Pongo/Downloads/kal.html
