@@ -14,7 +14,7 @@ Tujuan utama metode ini adalah:
 
 ---
 
-# Dasar Teori Eigenface
+## Dasar Teori Eigenface
 
 Pada komputer, gambar direpresentasikan sebagai kumpulan angka piksel.
 
@@ -50,9 +50,9 @@ Setiap baris matriks mewakili satu wajah.
 
 ---
 
-# Tahapan Metode Eigenface
+## Tahapan Metode Eigenface
 
-## 1. Konversi Gambar Menjadi Vektor
+### 1. Konversi Gambar Menjadi Vektor
 
 Semua gambar wajah diubah menjadi bentuk vektor agar dapat diproses secara matematis.
 
@@ -77,7 +77,7 @@ Penjelasan:
 
 ---
 
-## 2. Menghitung Wajah Rata-rata (Average Face)
+### 2. Menghitung Wajah Rata-rata (Average Face)
 
 Sistem menghitung rata-rata seluruh wajah pada dataset.
 
@@ -104,7 +104,7 @@ Penjelasan:
 
 ---
 
-## 3. Centering Data
+### 3. Centering Data
 
 Setelah mean face diperoleh, setiap gambar dikurangi dengan rata-rata wajah.
 
@@ -137,7 +137,7 @@ Penjelasan:
 
 ---
 
-## 4. Dekomposisi Menggunakan SVD
+### 4. Dekomposisi Menggunakan SVD
 
 Matriks hasil normalisasi kemudian diproses menggunakan Singular Value Decomposition.
 
@@ -180,7 +180,7 @@ Penjelasan:
 
 ---
 
-# Konsep Eigenface
+## Konsep Eigenface
 
 Eigenface bukan gambar wajah manusia secara langsung, melainkan representasi statistik dari pola wajah.
 
@@ -195,7 +195,7 @@ Eigenface menjadi dasar pembentukan ruang fitur wajah (*face space*).
 
 ---
 
-## 5. Proyeksi ke Face Space
+### 5. Proyeksi ke Face Space
 
 Semua gambar dipetakan ke ruang fitur berdimensi rendah.
 
@@ -224,7 +224,7 @@ Penjelasan:
 
 ---
 
-## 6. Identifikasi Wajah
+### 6. Identifikasi Wajah
 
 Untuk mengenali wajah baru:
 1. gambar diproyeksikan ke face space,
@@ -262,7 +262,7 @@ Penjelasan:
 
 ---
 
-# Implementasi Sistem
+## Implementasi Sistem
 
 Program dibangun menggunakan:
 - C++
@@ -281,11 +281,11 @@ Tahapan kerja sistem:
 
 ---
 
-# Tahapan Preprocessing
+## Tahapan Preprocessing
 
 Sebelum diproses, gambar wajah melalui beberapa tahap:
 
-## Grayscale
+### Grayscale
 
 Mengubah gambar berwarna menjadi abu-abu.
 
@@ -295,7 +295,7 @@ cvtColor(frame, gray, COLOR_BGR2GRAY);
 
 ---
 
-## Resize
+### Resize
 
 Menyamakan ukuran seluruh gambar.
 
@@ -305,7 +305,7 @@ resize(face, face, Size(100,100));
 
 ---
 
-## Histogram Equalization
+### Histogram Equalization
 
 Meningkatkan kualitas kontras gambar.
 
@@ -315,9 +315,9 @@ equalizeHist(face, face);
 
 ---
 
-# Struktur Fungsi Utama
+## Struktur Fungsi Utama
 
-## `train()`
+### `train()`
 
 Berfungsi untuk:
 - menghitung mean face,
@@ -327,14 +327,14 @@ Berfungsi untuk:
 
 ---
 
-## `project()`
+### `project()`
 
 Berfungsi untuk:
 - memproyeksikan wajah ke ruang fitur.
 
 ---
 
-## `predict()`
+### `predict()`
 
 Berfungsi untuk:
 - menghitung kemiripan,
@@ -343,7 +343,7 @@ Berfungsi untuk:
 
 ---
 
-# Diagram Alur Sistem
+## Diagram Alur Sistem
 
 ```text
 Dataset Wajah
@@ -369,7 +369,7 @@ Prediksi Identitas
 
 ---
 
-# Kesimpulan
+## Kesimpulan
 
 Metode Eigenface menggunakan PCA dan SVD untuk mengekstraksi fitur penting dari wajah manusia.
 
@@ -386,4 +386,4 @@ Kekurangan:
 Walaupun termasuk metode lama, Eigenface tetap menjadi fondasi penting dalam perkembangan sistem pengenalan wajah modern.
 
 
-## Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)
+ Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)

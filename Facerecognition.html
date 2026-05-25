@@ -179,14 +179,6 @@
 <li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DekomposiQR.html">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD</a></li>
-
-
-
-
-
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -380,40 +372,35 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dasar-teori-eigenface">Dasar Teori Eigenface</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-metode-eigenface">Tahapan Metode Eigenface</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-gambar-menjadi-vektor">1. Konversi Gambar Menjadi Vektor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-wajah-rata-rata-average-face">2. Menghitung Wajah Rata-rata (Average Face)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centering-data">3. Centering Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-menggunakan-svd">4. Dekomposisi Menggunakan SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dasar-teori-eigenface">Dasar Teori Eigenface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-metode-eigenface">Tahapan Metode Eigenface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-gambar-menjadi-vektor">1. Konversi Gambar Menjadi Vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-wajah-rata-rata-average-face">2. Menghitung Wajah Rata-rata (Average Face)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centering-data">3. Centering Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-menggunakan-svd">4. Dekomposisi Menggunakan SVD</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenface">Konsep Eigenface</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proyeksi-ke-face-space">5. Proyeksi ke Face Space</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-wajah">6. Identifikasi Wajah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenface">Konsep Eigenface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proyeksi-ke-face-space">5. Proyeksi ke Face Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-wajah">6. Identifikasi Wajah</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-sistem">Implementasi Sistem</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-preprocessing">Tahapan Preprocessing</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grayscale">Grayscale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resize">Resize</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-equalization">Histogram Equalization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-sistem">Implementasi Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-preprocessing">Tahapan Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grayscale">Grayscale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resize">Resize</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-equalization">Histogram Equalization</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-fungsi-utama">Struktur Fungsi Utama</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#train"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project"><code class="docutils literal notranslate"><span class="pre">project()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predict"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-fungsi-utama">Struktur Fungsi Utama</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#train"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project"><code class="docutils literal notranslate"><span class="pre">project()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predict"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram-alur-sistem">Diagram Alur Sistem</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-link-tersebut-untuk-melihat-contoh-programnya-demo-html-eigenface-file-c-users-pongo-downloads-kal-html">Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram-alur-sistem">Diagram Alur Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -433,10 +420,9 @@
 <li><p>mengambil fitur penting wajah,</p></li>
 <li><p>dan mengenali identitas wajah berdasarkan kemiripan fitur.</p></li>
 </ul>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="dasar-teori-eigenface">
-<h1>Dasar Teori Eigenface<a class="headerlink" href="#dasar-teori-eigenface" title="Link to this heading">#</a></h1>
+<section id="dasar-teori-eigenface">
+<h2>Dasar Teori Eigenface<a class="headerlink" href="#dasar-teori-eigenface" title="Link to this heading">#</a></h2>
 <p>Pada komputer, gambar direpresentasikan sebagai kumpulan angka piksel.</p>
 <p>Jika sebuah citra memiliki ukuran:</p>
 <div class="math notranslate nohighlight">
@@ -466,10 +452,10 @@ X \in \mathbb{R}^{M \times N}
 <p>Setiap baris matriks mewakili satu wajah.</p>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahapan-metode-eigenface">
-<h1>Tahapan Metode Eigenface<a class="headerlink" href="#tahapan-metode-eigenface" title="Link to this heading">#</a></h1>
+<section id="tahapan-metode-eigenface">
+<h2>Tahapan Metode Eigenface<a class="headerlink" href="#tahapan-metode-eigenface" title="Link to this heading">#</a></h2>
 <section id="konversi-gambar-menjadi-vektor">
-<h2>1. Konversi Gambar Menjadi Vektor<a class="headerlink" href="#konversi-gambar-menjadi-vektor" title="Link to this heading">#</a></h2>
+<h3>1. Konversi Gambar Menjadi Vektor<a class="headerlink" href="#konversi-gambar-menjadi-vektor" title="Link to this heading">#</a></h3>
 <p>Semua gambar wajah diubah menjadi bentuk vektor agar dapat diproses secara matematis.</p>
 <p>Contoh:</p>
 <ul class="simple">
@@ -493,7 +479,7 @@ X \in \mathbb{R}^{M \times N}
 </section>
 <hr class="docutils" />
 <section id="menghitung-wajah-rata-rata-average-face">
-<h2>2. Menghitung Wajah Rata-rata (Average Face)<a class="headerlink" href="#menghitung-wajah-rata-rata-average-face" title="Link to this heading">#</a></h2>
+<h3>2. Menghitung Wajah Rata-rata (Average Face)<a class="headerlink" href="#menghitung-wajah-rata-rata-average-face" title="Link to this heading">#</a></h3>
 <p>Sistem menghitung rata-rata seluruh wajah pada dataset.</p>
 <p>Persamaan:</p>
 <div class="math notranslate nohighlight">
@@ -518,7 +504,7 @@ X \in \mathbb{R}^{M \times N}
 </section>
 <hr class="docutils" />
 <section id="centering-data">
-<h2>3. Centering Data<a class="headerlink" href="#centering-data" title="Link to this heading">#</a></h2>
+<h3>3. Centering Data<a class="headerlink" href="#centering-data" title="Link to this heading">#</a></h3>
 <p>Setelah mean face diperoleh, setiap gambar dikurangi dengan rata-rata wajah.</p>
 <p>Rumus:</p>
 <div class="math notranslate nohighlight">
@@ -549,7 +535,7 @@ A_i = x_i - \mu
 </section>
 <hr class="docutils" />
 <section id="dekomposisi-menggunakan-svd">
-<h2>4. Dekomposisi Menggunakan SVD<a class="headerlink" href="#dekomposisi-menggunakan-svd" title="Link to this heading">#</a></h2>
+<h3>4. Dekomposisi Menggunakan SVD<a class="headerlink" href="#dekomposisi-menggunakan-svd" title="Link to this heading">#</a></h3>
 <p>Matriks hasil normalisasi kemudian diproses menggunakan Singular Value Decomposition.</p>
 <p>Persamaan SVD:</p>
 <div class="math notranslate nohighlight">
@@ -588,8 +574,8 @@ V^T
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="konsep-eigenface">
-<h1>Konsep Eigenface<a class="headerlink" href="#konsep-eigenface" title="Link to this heading">#</a></h1>
+<section id="konsep-eigenface">
+<h2>Konsep Eigenface<a class="headerlink" href="#konsep-eigenface" title="Link to this heading">#</a></h2>
 <p>Eigenface bukan gambar wajah manusia secara langsung, melainkan representasi statistik dari pola wajah.</p>
 <p>Ciri yang biasanya muncul:</p>
 <ul class="simple">
@@ -602,7 +588,7 @@ V^T
 <p>Eigenface menjadi dasar pembentukan ruang fitur wajah (<em>face space</em>).</p>
 <hr class="docutils" />
 <section id="proyeksi-ke-face-space">
-<h2>5. Proyeksi ke Face Space<a class="headerlink" href="#proyeksi-ke-face-space" title="Link to this heading">#</a></h2>
+<h3>5. Proyeksi ke Face Space<a class="headerlink" href="#proyeksi-ke-face-space" title="Link to this heading">#</a></h3>
 <p>Semua gambar dipetakan ke ruang fitur berdimensi rendah.</p>
 <p>Persamaan:</p>
 <div class="math notranslate nohighlight">
@@ -629,7 +615,7 @@ y = A \times V^T
 </section>
 <hr class="docutils" />
 <section id="identifikasi-wajah">
-<h2>6. Identifikasi Wajah<a class="headerlink" href="#identifikasi-wajah" title="Link to this heading">#</a></h2>
+<h3>6. Identifikasi Wajah<a class="headerlink" href="#identifikasi-wajah" title="Link to this heading">#</a></h3>
 <p>Untuk mengenali wajah baru:</p>
 <ol class="arabic simple">
 <li><p>gambar diproyeksikan ke face space,</p></li>
@@ -665,8 +651,8 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="implementasi-sistem">
-<h1>Implementasi Sistem<a class="headerlink" href="#implementasi-sistem" title="Link to this heading">#</a></h1>
+<section id="implementasi-sistem">
+<h2>Implementasi Sistem<a class="headerlink" href="#implementasi-sistem" title="Link to this heading">#</a></h2>
 <p>Program dibangun menggunakan:</p>
 <ul class="simple">
 <li><p>C++</p></li>
@@ -685,11 +671,11 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </ol>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="tahapan-preprocessing">
-<h1>Tahapan Preprocessing<a class="headerlink" href="#tahapan-preprocessing" title="Link to this heading">#</a></h1>
+<section id="tahapan-preprocessing">
+<h2>Tahapan Preprocessing<a class="headerlink" href="#tahapan-preprocessing" title="Link to this heading">#</a></h2>
 <p>Sebelum diproses, gambar wajah melalui beberapa tahap:</p>
 <section id="grayscale">
-<h2>Grayscale<a class="headerlink" href="#grayscale" title="Link to this heading">#</a></h2>
+<h3>Grayscale<a class="headerlink" href="#grayscale" title="Link to this heading">#</a></h3>
 <p>Mengubah gambar berwarna menjadi abu-abu.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">cvtColor</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">gray</span><span class="p">,</span><span class="w"> </span><span class="n">COLOR_BGR2GRAY</span><span class="p">);</span>
 </pre></div>
@@ -697,7 +683,7 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 <hr class="docutils" />
 <section id="resize">
-<h2>Resize<a class="headerlink" href="#resize" title="Link to this heading">#</a></h2>
+<h3>Resize<a class="headerlink" href="#resize" title="Link to this heading">#</a></h3>
 <p>Menyamakan ukuran seluruh gambar.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">resize</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="n">Size</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">));</span>
 </pre></div>
@@ -705,7 +691,7 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 <hr class="docutils" />
 <section id="histogram-equalization">
-<h2>Histogram Equalization<a class="headerlink" href="#histogram-equalization" title="Link to this heading">#</a></h2>
+<h3>Histogram Equalization<a class="headerlink" href="#histogram-equalization" title="Link to this heading">#</a></h3>
 <p>Meningkatkan kualitas kontras gambar.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">equalizeHist</span><span class="p">(</span><span class="n">face</span><span class="p">,</span><span class="w"> </span><span class="n">face</span><span class="p">);</span>
 </pre></div>
@@ -713,10 +699,10 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="struktur-fungsi-utama">
-<h1>Struktur Fungsi Utama<a class="headerlink" href="#struktur-fungsi-utama" title="Link to this heading">#</a></h1>
+<section id="struktur-fungsi-utama">
+<h2>Struktur Fungsi Utama<a class="headerlink" href="#struktur-fungsi-utama" title="Link to this heading">#</a></h2>
 <section id="train">
-<h2><code class="docutils literal notranslate"><span class="pre">train()</span></code><a class="headerlink" href="#train" title="Link to this heading">#</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">train()</span></code><a class="headerlink" href="#train" title="Link to this heading">#</a></h3>
 <p>Berfungsi untuk:</p>
 <ul class="simple">
 <li><p>menghitung mean face,</p></li>
@@ -727,7 +713,7 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 <hr class="docutils" />
 <section id="project">
-<h2><code class="docutils literal notranslate"><span class="pre">project()</span></code><a class="headerlink" href="#project" title="Link to this heading">#</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">project()</span></code><a class="headerlink" href="#project" title="Link to this heading">#</a></h3>
 <p>Berfungsi untuk:</p>
 <ul class="simple">
 <li><p>memproyeksikan wajah ke ruang fitur.</p></li>
@@ -735,7 +721,7 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 <hr class="docutils" />
 <section id="predict">
-<h2><code class="docutils literal notranslate"><span class="pre">predict()</span></code><a class="headerlink" href="#predict" title="Link to this heading">#</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">predict()</span></code><a class="headerlink" href="#predict" title="Link to this heading">#</a></h3>
 <p>Berfungsi untuk:</p>
 <ul class="simple">
 <li><p>menghitung kemiripan,</p></li>
@@ -745,8 +731,8 @@ Distance = \sqrt{\sum_{i=1}^{n}(p_i-q_i)^2}
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="diagram-alur-sistem">
-<h1>Diagram Alur Sistem<a class="headerlink" href="#diagram-alur-sistem" title="Link to this heading">#</a></h1>
+<section id="diagram-alur-sistem">
+<h2>Diagram Alur Sistem<a class="headerlink" href="#diagram-alur-sistem" title="Link to this heading">#</a></h2>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Dataset Wajah
       ↓
 Preprocessing
@@ -770,8 +756,8 @@ Prediksi Identitas
 </div>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan">
-<h1>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<section id="kesimpulan">
+<h2>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
 <p>Metode Eigenface menggunakan PCA dan SVD untuk mengekstraksi fitur penting dari wajah manusia.</p>
 <p>Keunggulan:</p>
 <ul class="simple">
@@ -786,8 +772,7 @@ Prediksi Identitas
 <li><p>kurang stabil untuk ekspresi berbeda.</p></li>
 </ul>
 <p>Walaupun termasuk metode lama, Eigenface tetap menjadi fondasi penting dalam perkembangan sistem pengenalan wajah modern.</p>
-<section id="copy-link-tersebut-untuk-melihat-contoh-programnya-demo-html-eigenface-file-c-users-pongo-downloads-kal-html">
-<h2>Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)<a class="headerlink" href="#copy-link-tersebut-untuk-melihat-contoh-programnya-demo-html-eigenface-file-c-users-pongo-downloads-kal-html" title="Link to this heading">#</a></h2>
+<p>Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)</p>
 </section>
 </section>
 
@@ -857,40 +842,35 @@ Prediksi Identitas
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dasar-teori-eigenface">Dasar Teori Eigenface</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-metode-eigenface">Tahapan Metode Eigenface</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-gambar-menjadi-vektor">1. Konversi Gambar Menjadi Vektor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-wajah-rata-rata-average-face">2. Menghitung Wajah Rata-rata (Average Face)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centering-data">3. Centering Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-menggunakan-svd">4. Dekomposisi Menggunakan SVD</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dasar-teori-eigenface">Dasar Teori Eigenface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-metode-eigenface">Tahapan Metode Eigenface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konversi-gambar-menjadi-vektor">1. Konversi Gambar Menjadi Vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-wajah-rata-rata-average-face">2. Menghitung Wajah Rata-rata (Average Face)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centering-data">3. Centering Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dekomposisi-menggunakan-svd">4. Dekomposisi Menggunakan SVD</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenface">Konsep Eigenface</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proyeksi-ke-face-space">5. Proyeksi ke Face Space</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-wajah">6. Identifikasi Wajah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenface">Konsep Eigenface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proyeksi-ke-face-space">5. Proyeksi ke Face Space</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-wajah">6. Identifikasi Wajah</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-sistem">Implementasi Sistem</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-preprocessing">Tahapan Preprocessing</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grayscale">Grayscale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resize">Resize</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-equalization">Histogram Equalization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-sistem">Implementasi Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahapan-preprocessing">Tahapan Preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grayscale">Grayscale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resize">Resize</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-equalization">Histogram Equalization</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-fungsi-utama">Struktur Fungsi Utama</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#train"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project"><code class="docutils literal notranslate"><span class="pre">project()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predict"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-fungsi-utama">Struktur Fungsi Utama</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#train"><code class="docutils literal notranslate"><span class="pre">train()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project"><code class="docutils literal notranslate"><span class="pre">project()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predict"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram-alur-sistem">Diagram Alur Sistem</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-link-tersebut-untuk-melihat-contoh-programnya-demo-html-eigenface-file-c-users-pongo-downloads-kal-html">Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagram-alur-sistem">Diagram Alur Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
