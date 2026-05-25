@@ -386,4 +386,5 @@ Kekurangan:
 Walaupun termasuk metode lama, Eigenface tetap menjadi fondasi penting dalam perkembangan sistem pengenalan wajah modern.
 
 
- Copy Link Tersebut Untuk Melihat contoh programnya [Demo HTML Eigenface](file:///C:/Users/Pongo/Downloads/kal.html)
+ Copy Link Tersebut Untuk Melihat contoh programnya 
+ ### https://colab.research.google.com/drive/1g8Zh5LnYIO0y66BWYphAlI3wKEp8LBaY?usp=sharing
