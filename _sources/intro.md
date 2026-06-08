@@ -1,6 +1,6 @@
 # Welcome My Note
 # Nama Saya :Ahmad Subaidi
-# Nim       : 250411100024
+# Nim       : 250411100073
 
 Berikut ialah Semua Materi Komputasi Aljabar Linear Yang Saya Pelajari .
 Perkenalkan Nama : Ahmad Subaidi
