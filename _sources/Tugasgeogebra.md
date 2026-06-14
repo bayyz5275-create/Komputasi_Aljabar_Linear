@@ -4,11 +4,7 @@ Pada tugas ini, saya menggunakan **GeoGebra Graphing Calculator** untuk memvisua
 
 ## Gambar Grafik
 
-```{Geogebra.png} 
-:alt: Grafik SPLDV menggunakan GeoGebra
-:width: 800px
-:align: center
-```
+![original image](Geogebra.png)
 
 ## Persamaan yang Digunakan
 
