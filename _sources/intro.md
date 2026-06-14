@@ -40,7 +40,7 @@ Melalui dokumentasi ini, saya berharap dapat:
 ```
 
 
-## Halo, saya **Bay**, mahasiswa yang sedang mempelajari dan mendokumentasikan materi Aljabar Linear menggunakan Jupyter Book. Dan saya tahu web ini masih jauh dari kata sempurna jadi saya meminta kritik serta sarannya.
+ Halo, saya **Bay**, mahasiswa yang sedang mempelajari dan mendokumentasikan materi Aljabar Linear menggunakan Jupyter Book. Dan saya tahu web ini masih jauh dari kata sempurna jadi saya meminta kritik serta sarannya.
 
 ### 🌐 Media Sosial
 
