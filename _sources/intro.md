@@ -1,18 +1,33 @@
-# Welcome My Note
-# Nama Saya :Ahmad Subaidi
-# Nim       : 250411100073
+# 📚 Welcome to My Linear Algebra Computation Notes
 
-Berikut ialah Semua Materi Komputasi Aljabar Linear Yang Saya Pelajari .
-Perkenalkan Nama : Ahmad Subaidi
-tanggal lahir : 10-Juli-2007
-Asal Kota : Sumenep 
-ini Documentasi Untuk Mata Kuliah KAL [the Jupyter Book documentation](https://jupyterbook.org)
+## 👨‍🎓 About Me
 
-Check out the content pages bundled with this sample book to see more.
+| Informasi | Keterangan |
+|-----------|------------|
+| **Nama** | Ahmad Subaidi |
+| **NIM** | 250411100073 |
+| **Tanggal Lahir** | 10 Juli 2007 |
+| **Asal Kota** | Sumenep |
+
+---
+
+## ✨ Tentang Dokumentasi Ini
+
+Selamat datang di dokumentasi **Komputasi Aljabar Linear (KAL)**.
+
+Website ini berisi kumpulan materi, tugas, evaluasi, dan proyek yang telah saya pelajari selama perkuliahan Komputasi Aljabar Linear.
+
+Melalui dokumentasi ini, saya berharap dapat:
+
+- 📖 Mendokumentasikan proses pembelajaran
+- 📝 Menyimpan tugas dan hasil evaluasi
+- 💡 Menjadi referensi belajar di masa mendatang
+- 🚀 Mengembangkan kemampuan komputasi matematika
+
+---
+
+## 📂 Daftar Isi
 
 ```{tableofcontents}
-```
-
-Pelanggar Hak Cipta aakan Tetap Berlaku!!!
 
 
