@@ -1,4 +1,4 @@
-# Tugas Awal 2
+# Tugas No. 1 Geobra
 
 Pada tugas ini, saya menggunakan **GeoGebra Graphing Calculator** untuk memvisualisasikan penyelesaian Sistem Persamaan Linear Dua Variabel (SPLDV).
 

@@ -1,9 +1,4 @@
----
-tittle: Tugas Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD
-
----
-
-# Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD
+# Tugas No. 8 Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD
 
 Eigenface merupakan metode pengenalan wajah yang memanfaatkan teknik reduksi dimensi untuk menemukan pola utama dari kumpulan citra wajah. Metode ini dibangun berdasarkan konsep **Principal Component Analysis (PCA)** dan pada implementasinya dihitung menggunakan **Singular Value Decomposition (SVD)**.
 

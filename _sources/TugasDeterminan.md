@@ -1,4 +1,4 @@
-# Tugas Evaluasi Determinan 
+# Tugas No. 4 Evaluasi Determinan 
 A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
 $$\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}$$
 dengan $$M_{ij}$$ adalah minior dari matrik A dan

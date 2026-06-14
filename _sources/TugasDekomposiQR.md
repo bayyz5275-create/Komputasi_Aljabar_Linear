@@ -1,4 +1,4 @@
-# Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi QR (8)
+# Tugas No. 7 Eigen Value dan Eigen Vektor dengan Dekomposisi QR (8)
 
 ## Link Google Colab
 

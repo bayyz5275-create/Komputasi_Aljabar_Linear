@@ -1,4 +1,4 @@
-# Materi Pertemuan 1
+# Materi Pertemuan 
 
 ## 1. Pengertian Persamaan Linear
 Persamaan linear merupakan salah satu bentuk persamaan dalam aljabar yang setiap sukunya terdiri dari konstanta atau hasil kali konstanta dengan satu variabel berpangkat satu.

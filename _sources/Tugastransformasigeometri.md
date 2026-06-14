@@ -1,4 +1,4 @@
-# Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y
+# Tugas No. 6 Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y
 
 ## Pendahuluan
 
