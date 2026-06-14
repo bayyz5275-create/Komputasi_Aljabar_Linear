@@ -1,10 +1,10 @@
-# Tugas Awal (2)
+# Tugas Awal 2
 
 Pada tugas ini, saya menggunakan **GeoGebra Graphing Calculator** untuk memvisualisasikan penyelesaian Sistem Persamaan Linear Dua Variabel (SPLDV).
 
 ## Gambar Grafik
 
-![original image](https://cdn.mathpix.com/snip/images/v_gMxd2nB-Bu5zriMAwHfP5Jejudb29u2q7SxuKTrIA.original.fullsize.png))
+![original image](https://cdn.mathpix.com/snip/images/v_gMxd2nB-Bu5zriMAwHfP5Jejudb29u2q7SxuKTrIA.original.fullsize.png)
 
 ## Persamaan yang Digunakan
 
@@ -70,8 +70,8 @@ y = 1
 
 Sehingga diperoleh titik penyelesaian:
 
-\[
-(3,1)
+\[ 
+(3,1) 
 \]
 
 ## Penjelasan Gambar
@@ -101,8 +101,8 @@ x - y = 2
 
 memiliki solusi tunggal yaitu:
 
-\[
-\boxed{(3,1)}
-\]
+$$
+\boxed{(x,y)=(3,1)}
+$$
 
 Titik tersebut merupakan titik perpotongan kedua garis pada grafik GeoGebra.

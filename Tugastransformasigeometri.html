@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tugas Awal 2 &#8212; My sample book</title>
+    <title>Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y &#8212; My sample book</title>
   
   
   
@@ -62,11 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugasgeogebra';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugastransformasigeometri';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas Ulangan Tengah Semester" href="Tugasuts.html" />
-    <link rel="prev" title="Materi Pertemuan 1" href="Materi1.html" />
+    <link rel="next" title="Transformasi Matriks" href="TransformasiMatriks.html" />
+    <link rel="prev" title="Evaluasi Determinan Dan Invers" href="EvaluasiDE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -172,12 +172,12 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Materi1.html">Materi Pertemuan 1</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Awal 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugasgeogebra.html">Tugas Awal 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugasuts.html">Tugas Ulangan Tengah Semester</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugasgauss.html">Tugas Eliminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SoalDeterminan.html">Soal Evaluasi Determinan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EvaluasiDE.html">Evaluasi Determinan Dan Invers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugastransformasigeometri.html">Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TransformasiMatriks.html">Transformasi Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DekomposiQR.html">Algoritma QR Dasar dengan Gram-Schmidt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Facerecognition.html">Sistem Pengenalan Wajah Menggunakan Eigenface dan SVD</a></li>
@@ -258,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugasgeogebra.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugastransformasigeometri.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +288,7 @@
       
       
       
-      <li><a href="_sources/Tugasgeogebra.md" target="_blank"
+      <li><a href="_sources/Tugastransformasigeometri.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -364,7 +364,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tugas Awal 2</h1>
+    <h1>Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -374,11 +374,22 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gambar-grafik">Gambar Grafik</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-yang-digunakan">Persamaan yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian">Langkah Penyelesaian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-gambar">Penjelasan Gambar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-google-colab">Link Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal">1. Data Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-translasi">2. Operasi Translasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-translasi">Hasil Translasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-refleksi-terhadap-sumbu-y">3. Operasi Refleksi terhadap Sumbu Y</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-refleksi">Hasil Refleksi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">4. Komposisi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-transformasi-akhir">5. Bentuk Transformasi Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simulasi-transformasi">6. Simulasi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis">7. Analisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
 </ul>
             </nav>
         </div>
@@ -390,89 +401,276 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-awal-2">
-<h1>Tugas Awal 2<a class="headerlink" href="#tugas-awal-2" title="Link to this heading">#</a></h1>
-<p>Pada tugas ini, saya menggunakan <strong>GeoGebra Graphing Calculator</strong> untuk memvisualisasikan penyelesaian Sistem Persamaan Linear Dua Variabel (SPLDV).</p>
-<section id="gambar-grafik">
-<h2>Gambar Grafik<a class="headerlink" href="#gambar-grafik" title="Link to this heading">#</a></h2>
-<p><img alt="original image" src="https://cdn.mathpix.com/snip/images/v_gMxd2nB-Bu5zriMAwHfP5Jejudb29u2q7SxuKTrIA.original.fullsize.png" /></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-transformasi-geometri-translasi-dan-refleksi-terhadap-sumbu-y">
+<h1>Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y<a class="headerlink" href="#tugas-transformasi-geometri-translasi-dan-refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h1>
+<section id="link-google-colab">
+<h2>Link Google Colab<a class="headerlink" href="#link-google-colab" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://colab.research.google.com/">https://colab.research.google.com/</a></p>
 </section>
-<section id="persamaan-yang-digunakan">
-<h2>Persamaan yang Digunakan<a class="headerlink" href="#persamaan-yang-digunakan" title="Link to this heading">#</a></h2>
-<p>Persamaan yang digambar pada GeoGebra adalah:</p>
-<p>[
-x + y = 4
-]</p>
-<p>[
-x - y = 2
-]</p>
+<hr class="docutils" />
+<section id="pendahuluan">
+<h2>Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Pada tugas ini dilakukan transformasi geometri terhadap sebuah bangun persegi. Transformasi yang digunakan terdiri dari dua tahap, yaitu translasi (pergeseran) dan refleksi (pencerminan) terhadap sumbu Y.</p>
+<p>Tujuan dari transformasi ini adalah untuk mengetahui perubahan posisi objek setelah dikenai beberapa operasi geometri secara berurutan.</p>
 </section>
-<section id="langkah-penyelesaian">
-<h2>Langkah Penyelesaian<a class="headerlink" href="#langkah-penyelesaian" title="Link to this heading">#</a></h2>
-<p>Dari persamaan pertama:</p>
-<p>[
-x + y = 4
-]</p>
-<p>maka</p>
-<p>[
-y = 4 - x
-]</p>
-<p>Dari persamaan kedua:</p>
-<p>[
-x - y = 2
-]</p>
-<p>maka</p>
-<p>[
-y = x - 2
-]</p>
-<p>Selanjutnya kedua persamaan disamakan:</p>
-<p>[
-4 - x = x - 2
-]</p>
-<p>[
-6 = 2x
-]</p>
-<p>[
-x = 3
-]</p>
-<p>Substitusikan nilai (x) ke salah satu persamaan:</p>
-<p>[
-y = 4 - 3
-]</p>
-<p>[
-y = 1
-]</p>
-<p>Sehingga diperoleh titik penyelesaian:</p>
-<p>[
-(3,1)
-]</p>
+<hr class="docutils" />
+<section id="data-awal">
+<h2>1. Data Awal<a class="headerlink" href="#data-awal" title="Link to this heading">#</a></h2>
+<p>Bangun yang digunakan adalah persegi dengan koordinat titik sebagai berikut:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Titik</p></th>
+<th class="head"><p>Koordinat</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>(1,1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>(3,1)</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>(3,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>(1,3)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Representasi titik dalam koordinat homogen:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P=
+\begin{bmatrix}
+x\\
+y\\
+1
+\end{bmatrix}
+\end{split}\]</div>
 </section>
-<section id="penjelasan-gambar">
-<h2>Penjelasan Gambar<a class="headerlink" href="#penjelasan-gambar" title="Link to this heading">#</a></h2>
-<p>Pada gambar terlihat dua garis:</p>
-<ul class="simple">
-<li><p><strong>Garis hijau</strong> merepresentasikan persamaan (x + y = 4).</p></li>
-<li><p><strong>Garis biru</strong> merepresentasikan persamaan (x - y = 2).</p></li>
-</ul>
-<p>Kedua garis berpotongan pada titik <strong>(3,1)</strong>. Titik potong tersebut merupakan solusi dari sistem persamaan linear karena memenuhi kedua persamaan sekaligus.</p>
-<p>Visualisasi menggunakan GeoGebra memudahkan dalam memahami hubungan antara persamaan linear dan representasi grafiknya. Dengan melihat titik perpotongan, solusi SPLDV dapat diperoleh secara geometris tanpa harus melakukan perhitungan panjang.</p>
-</section>
-<section id="kesimpulan">
-<h2>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
-<p>Berdasarkan grafik dan perhitungan aljabar, sistem persamaan linear:</p>
-<p>[
-x + y = 4
-]</p>
-<p>dan</p>
-<p>[
-x - y = 2
-]</p>
-<p>memiliki solusi tunggal yaitu:</p>
+<hr class="docutils" />
+<section id="operasi-translasi">
+<h2>2. Operasi Translasi<a class="headerlink" href="#operasi-translasi" title="Link to this heading">#</a></h2>
+<p>Langkah pertama adalah menggeser seluruh titik sejauh 1 satuan ke arah kanan.</p>
+<p>Persamaan translasi:</p>
 <div class="math notranslate nohighlight">
 \[
-\boxed{(x,y)=(3,1)}
+(x,y)\rightarrow(x+1,y)
 \]</div>
-<p>Titik tersebut merupakan titik perpotongan kedua garis pada grafik GeoGebra.</p>
+<p>Matriks translasi yang digunakan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T=
+\begin{bmatrix}
+1 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Sehingga transformasi dapat dituliskan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+P_1=T \cdot P
+\]</div>
+<section id="hasil-translasi">
+<h3>Hasil Translasi<a class="headerlink" href="#hasil-translasi" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Titik Awal</p></th>
+<th class="head"><p>Titik Baru</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A(1,1)</p></td>
+<td><p>(2,1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>B(3,1)</p></td>
+<td><p>(4,1)</p></td>
+</tr>
+<tr class="row-even"><td><p>C(3,3)</p></td>
+<td><p>(4,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>D(1,3)</p></td>
+<td><p>(2,3)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="operasi-refleksi-terhadap-sumbu-y">
+<h2>3. Operasi Refleksi terhadap Sumbu Y<a class="headerlink" href="#operasi-refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h2>
+<p>Setelah translasi dilakukan, objek dicerminkan terhadap sumbu Y.</p>
+<p>Aturan refleksi:</p>
+<div class="math notranslate nohighlight">
+\[
+(x,y)\rightarrow(-x,y)
+\]</div>
+<p>Matriks refleksi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R=
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Transformasi refleksi:</p>
+<div class="math notranslate nohighlight">
+\[
+P_2=R \cdot P_1
+\]</div>
+<section id="hasil-refleksi">
+<h3>Hasil Refleksi<a class="headerlink" href="#hasil-refleksi" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Titik Setelah Translasi</p></th>
+<th class="head"><p>Titik Setelah Refleksi</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>(2,1)</p></td>
+<td><p>(-2,1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>(4,1)</p></td>
+<td><p>(-4,1)</p></td>
+</tr>
+<tr class="row-even"><td><p>(4,3)</p></td>
+<td><p>(-4,3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>(2,3)</p></td>
+<td><p>(-2,3)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="komposisi-transformasi">
+<h2>4. Komposisi Transformasi<a class="headerlink" href="#komposisi-transformasi" title="Link to this heading">#</a></h2>
+<p>Karena translasi dilakukan terlebih dahulu kemudian refleksi, maka transformasi gabungan dapat dituliskan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+P' = R \cdot T \cdot P
+\]</div>
+<p>Dengan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T=
+\begin{bmatrix}
+1 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>dan</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R=
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Maka diperoleh:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+RT=
+\begin{bmatrix}
+-1 &amp; 0 &amp; -1\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="bentuk-transformasi-akhir">
+<h2>5. Bentuk Transformasi Akhir<a class="headerlink" href="#bentuk-transformasi-akhir" title="Link to this heading">#</a></h2>
+<p>Dari matriks gabungan diperoleh fungsi transformasi:</p>
+<div class="math notranslate nohighlight">
+\[
+(x,y)\rightarrow(-(x+1),y)
+\]</div>
+<p>Artinya:</p>
+<ol class="arabic simple">
+<li><p>Titik digeser 1 satuan ke kanan.</p></li>
+<li><p>Hasil pergeseran dicerminkan terhadap sumbu Y.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="simulasi-transformasi">
+<h2>6. Simulasi Transformasi<a class="headerlink" href="#simulasi-transformasi" title="Link to this heading">#</a></h2>
+<p>Jika transformasi dilakukan berulang sebanyak n langkah, maka pola perpindahan titik menjadi:</p>
+<div class="math notranslate nohighlight">
+\[
+(x,y)\rightarrow(x+n,y)
+\]</div>
+<p>Kemudian direfleksikan menjadi:</p>
+<div class="math notranslate nohighlight">
+\[
+(x,y)\rightarrow(-(x+n),y)
+\]</div>
+<p>Sebagai contoh:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Langkah</p></th>
+<th class="head"><p>Koordinat</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Awal</p></td>
+<td><p>(1,1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>(-2,1)</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>(-3,1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>(-4,1)</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="analisis">
+<h2>7. Analisis<a class="headerlink" href="#analisis" title="Link to this heading">#</a></h2>
+<p>Transformasi translasi tidak mengubah bentuk maupun ukuran bangun, hanya mengubah posisinya.</p>
+<p>Refleksi terhadap sumbu Y menghasilkan bangun yang simetris terhadap sumbu tersebut. Akibatnya seluruh nilai koordinat x berubah tanda, sedangkan koordinat y tetap.</p>
+<p>Karena kedua transformasi dilakukan secara berurutan, posisi akhir objek dipengaruhi oleh hasil translasi sebelumnya.</p>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan">
+<h2>8. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Berdasarkan hasil percobaan dapat disimpulkan bahwa:</p>
+<ul class="simple">
+<li><p>Bangun awal berupa persegi dengan empat titik sudut.</p></li>
+<li><p>Translasi menggeser seluruh titik ke arah kanan.</p></li>
+<li><p>Refleksi terhadap sumbu Y mengubah tanda koordinat x.</p></li>
+<li><p>Bentuk dan ukuran bangun tetap sama selama transformasi.</p></li>
+<li><p>Transformasi gabungan dinyatakan sebagai:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+P' = R \cdot T \cdot P
+\]</div>
+<p>dengan hasil akhir:</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{(x,y)\rightarrow(-(x+1),y)}
+\]</div>
+<p>Transformasi ini menunjukkan bagaimana dua operasi geometri dapat dikombinasikan untuk menghasilkan posisi baru suatu objek pada bidang koordinat.</p>
 </section>
 </section>
 
@@ -507,20 +705,20 @@ x - y = 2
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Materi1.html"
+       href="EvaluasiDE.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Materi Pertemuan 1</p>
+        <p class="prev-next-title">Evaluasi Determinan Dan Invers</p>
       </div>
     </a>
     <a class="right-next"
-       href="Tugasuts.html"
+       href="TransformasiMatriks.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tugas Ulangan Tengah Semester</p>
+        <p class="prev-next-title">Transformasi Matriks</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,11 +740,22 @@ x - y = 2
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gambar-grafik">Gambar Grafik</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-yang-digunakan">Persamaan yang Digunakan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian">Langkah Penyelesaian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-gambar">Penjelasan Gambar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-google-colab">Link Google Colab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-awal">1. Data Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-translasi">2. Operasi Translasi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-translasi">Hasil Translasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-refleksi-terhadap-sumbu-y">3. Operasi Refleksi terhadap Sumbu Y</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-refleksi">Hasil Refleksi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">4. Komposisi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-transformasi-akhir">5. Bentuk Transformasi Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simulasi-transformasi">6. Simulasi Transformasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis">7. Analisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
 </ul>
   </nav></div>
 
