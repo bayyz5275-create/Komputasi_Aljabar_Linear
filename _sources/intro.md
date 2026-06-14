@@ -1,6 +1,6 @@
 # 📚 Welcome to My Linear Algebra Computation Notes
 
-## 👨‍🎓 About Me
+## 👨‍🎓 Biodata Saya
 
 | Informasi | Keterangan |
 |-----------|------------|
