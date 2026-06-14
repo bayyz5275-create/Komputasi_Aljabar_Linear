@@ -1,5 +1,13 @@
 # 📚 Welcome to My Linear Algebra Computation Notes
 
+## Biodata Dosen Pengampu
+
+| Informasi | Keterangan |
+|-----------|------------|
+| **Nama** | Mula'ab, S.Si., M.Kom.  |
+| **NIP** |  |
+
+
 ## 👨‍🎓 Biodata Saya
 
 | Informasi | Keterangan |
@@ -8,6 +16,7 @@
 | **NIM** | 250411100073 |
 | **Tanggal Lahir** | 10 Juli 2007 |
 | **Asal Kota** | Sumenep |
+
 
 ---
 
