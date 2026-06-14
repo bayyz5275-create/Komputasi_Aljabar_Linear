@@ -4,7 +4,7 @@ Pada tugas ini, saya menggunakan **GeoGebra Graphing Calculator** untuk memvisua
 
 ## Gambar Grafik
 
-![original image](Geogebra.png)
+![original image](![](https://cdn.mathpix.com/snip/images/v_gMxd2nB-Bu5zriMAwHfP5Jejudb29u2q7SxuKTrIA.original.fullsize.png))
 
 ## Persamaan yang Digunakan
 
