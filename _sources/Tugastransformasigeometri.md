@@ -1,11 +1,5 @@
 # Tugas Transformasi Geometri: Translasi dan Refleksi terhadap Sumbu Y
 
-## Link Google Colab
-
-https://colab.research.google.com/
-
----
-
 ## Pendahuluan
 
 Pada tugas ini dilakukan transformasi geometri terhadap sebuah bangun persegi. Transformasi yang digunakan terdiri dari dua tahap, yaitu translasi (pergeseran) dan refleksi (pencerminan) terhadap sumbu Y.
@@ -229,3 +223,9 @@ $$
 $$
 
 Transformasi ini menunjukkan bagaimana dua operasi geometri dapat dikombinasikan untuk menghasilkan posisi baru suatu objek pada bidang koordinat.
+
+## Link Google Colab
+
+https://colab.research.google.com/drive/1bXaofTFXfyaRI2C47o_o5KNTYy2VXNFS?usp=sharing
+
+---
