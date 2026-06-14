@@ -1,12 +1,14 @@
 # 📚 Welcome to My Linear Algebra Computation Notes
 
-## Biodata Dosen Pengampu
+## 👨‍🏫 Biodata Dosen Pengampu
 
 | Informasi | Keterangan |
 |-----------|------------|
-| **Nama** | Mula'ab, S.Si., M.Kom.  |
-| **NIP** |  |
-
+| **Nama Dosen** | Mula'ab, S.Si., M.Kom.  |
+| **NIP** | 197305202002121001 |
+| **Jurusan Perguruan Tinggi** | 
+M. Kom., Teknik Informatika, Institut Teknologi Sepuluh Nopember, Surabaya
+S.Si., Matematika, Institut Teknologi Sepuluh Nopember, Surabaya |
 
 ## 👨‍🎓 Biodata Saya
 
