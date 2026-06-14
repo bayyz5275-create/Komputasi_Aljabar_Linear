@@ -37,5 +37,19 @@ Melalui dokumentasi ini, saya berharap dapat:
 ## 📂 Daftar Isi
 
 ```{tableofcontents}
+```
 
 
+## Halo, saya **Bay**, mahasiswa yang sedang mempelajari dan mendokumentasikan materi Aljabar Linear menggunakan Jupyter Book. Dan saya tahu web ini masih jauh dari kata sempurna jadi saya meminta kritik serta sarannya.
+
+### 🌐 Media Sosial
+
+| Platform | Link |
+|----------|------|
+| 📷 Instagram | https://instagram.com/allabout.bayyy |
+| 🐙 GitHub | https://github.com/bayyz5275-create |
+| 📧 Email | bayyz5275@gmail.com |
+
+---
+
+⭐ Jika materi ini bermanfaat, jangan lupa kunjungi repository GitHub saya.
