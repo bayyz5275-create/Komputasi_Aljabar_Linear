@@ -1,9 +1,5 @@
 # Tugas No. 7 Eigen Value dan Eigen Vektor dengan Dekomposisi QR (8)
 
-## Link Google Colab
-
-https://colab.research.google.com/drive/1Nb7MoC5RzdQFF833btc5nUpd7BSr5LY8?usp=sharing
-
 Materi ini membahas proses mencari nilai eigen dan vektor eigen menggunakan metode **Dekomposisi QR** dengan proses **Gram-Schmidt** dan **Iterasi QR** sebanyak 10 kali.
 
 Diberikan matriks:
@@ -537,3 +533,7 @@ v_2=
 $$
 
 Semakin banyak iterasi dilakukan, matriks akan semakin mendekati bentuk diagonal sehingga nilai diagonalnya menjadi pendekatan nilai eigen matriks awal.
+
+## Link Google Colab
+
+https://colab.research.google.com/drive/1Nb7MoC5RzdQFF833btc5nUpd7BSr5LY8?usp=sharing
